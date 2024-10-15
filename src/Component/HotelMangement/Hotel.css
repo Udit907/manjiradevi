@@ -1,0 +1,83 @@
+.hmimage1 {
+    background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/hm.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .hmimage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .diplomahm-image {
+    background-image:linear-gradient(to left,rgba(3, 3, 3, 0.4),rgba(82, 79, 75, 0.4)), url("/public/hm2.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .bbatourism-image {
+    background-image:linear-gradient(to left,rgba(6, 6, 6, 0.4),rgba(82, 79, 75, 0.4)), url("/public/hm1.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .bachelorhm-image {
+    background-image:linear-gradient(to left,rgba(6, 6, 6, 0.4),rgba(82, 79, 75, 0.4)), url("/public/hm2.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .baartsbg2{
+      background-color: rgba(192, 178, 178, 0.2);
+  
+  }
+  .baarts-span{
+      color: #FD5F00;
+    }
+    .baarts-heading{
+      font-weight: bold;
+      font-family: serif;
+    }
+    .baarts-col{
+      border-radius: 17px;
+      box-shadow: 4px 4px 12px white;
+     
+    }
+    .baarts-col:hover{
+      background-color: #0D1128;
+      color: white;
+    }
+    
+    .baarts-image1{
+      height:auto;
+      width: auto;
+      border-radius: 15px;
+    
+    }
+    .baarts-cardh{
+    
+        
+        font-weight: bold;
+        font-family: serif;
+      margin-left:15px;
+    
+    }
+    
+    .baarts-bt {
+      color: white;
+      background-color: #FD5F00;
+      width: 150px;
+      text-decoration: none;
+      font-size: 17px;
+      margin-left:15px;
+      border-radius: 15px;
+    }
+    .baarts-bt:hover{
+      background-color: gray;
+      color: white;
+    }

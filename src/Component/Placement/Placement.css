@@ -1,0 +1,366 @@
+.placements-overview {
+    color: black;
+    text-align: left;
+    background-image: url('/public/gnm2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ba8421;
+}
+
+.header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: #333; 
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.stat-item {
+    flex: 1 1 calc(20% - 20px);
+    margin: 10px;
+    background-color: rgba(252, 252, 252, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item:hover {
+    background-color: rgba(192, 171, 171, 0.9);
+    transform: translateY(-3px);
+}
+
+.stat-item h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #002b5c;
+}
+
+.stat-item p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/* Impeccable Placements */
+.impeccable-placements {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.impeccable-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.impeccable-header h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #333;
+}
+
+.impeccable-header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: #ff6a07;
+}
+
+.impeccable-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.description {
+    flex: 2;
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.thumbnail {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Vision Section */
+.vision-section {
+    background-color: #002b5c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.vision-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.vision-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.vision-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vision-card {
+    background-color: white;
+    color: #002b5c;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition-duration: 200ms;
+}
+
+.vision-card:hover {
+    transform: scale(1.05);
+}
+
+.vision-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.vision-card p {
+    font-size: 1em;
+}
+
+/* DBUU Layout */
+.dbuu-layout {
+    display: flex;
+    margin-top: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+}
+
+.campus-life-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.campus-life-item {
+    text-align: center;
+}
+
+.campus-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.happening {
+    color: #002b5c;
+}
+
+.text {
+    font-size: 1.2em;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+/* Placement Highlights */
+.placement-highlights {
+    margin-bottom: 20px;
+}
+
+.placement-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mission Section */
+.mission2-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.mission2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mission2-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.mission2-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.mission2-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mission2-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission2-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .impeccable-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description, .images {
+        margin: 0;
+        padding: 0;
+    }
+
+    .vision-section {
+        padding: 20px 10px;
+    }
+
+    .vision-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision-card {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+
+    .dbuu-layout {
+        flex-direction: column;
+    }
+
+    .mission2-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mission2-text {
+        text-align: center;
+    }
+
+    .mission2-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .vision-section h2 {
+        font-size: 1.5em;
+    }
+
+    .vision-section p {
+        font-size: 1em;
+    }
+
+    .mission2-text h2 {
+        font-size: 28px;
+    }
+
+    .mission2-text p {
+        font-size: 14px;
+    }
+}
+
+/* Ensure images come below the context in mobile view */
+@media (max-width: 768px) {
+    .impeccable-content {
+        flex-direction: column;
+    }
+
+    .description {
+        order: 1;
+    }
+
+    .images {
+        order: 2;
+    }
+
+    .mission2-content {
+        flex-direction: column;
+    }
+
+    .mission2-text {
+        order: 1;
+    }
+
+    .mission2-image {
+        order: 2;
+    }
+}

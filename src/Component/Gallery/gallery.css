@@ -1,0 +1,129 @@
+.our-schools-slider {
+	padding: 50px 50px;
+	background-color: #0D1128;
+	color: white;
+	text-align: center;
+	position: relative;
+  }
+  
+  .medical-text {
+	font-family: serif;
+	text-align: justify;
+	font-size: 21px;
+  }
+  
+  .slider-title {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: white;
+  }
+  
+  .slider-subtitle {
+	font-size: 19px;
+	color: #f96e5b;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin-bottom: 40px;
+  }
+  
+  .slide {
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 10px;
+	text-align: center;
+	margin: 0px 2px;
+  }
+  
+  .slide-image {
+	width: 90%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .slide-image:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .slide-content {
+	text-align: center;
+  }
+  
+  .slide-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+  }
+  
+  .slide-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #FD5F00;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 5px;
+	text-decoration: none;
+  }
+  
+  .slick-dots {
+	bottom: -30px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+  }
+  
+  .slick-dots li {
+	margin: 0 5px;
+  }
+  
+  .slick-dots li button:before {
+	color: white !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+	color: white !important;
+  }
+  
+  @media (max-width: 767px) {
+	.our-schools-slider {
+	  padding: 30px 20px;
+	}
+  
+	.slider-title {
+	  font-size: 24px;
+	  margin-bottom: 5px;
+	}
+  
+	.slider-subtitle {
+	  font-size: 16px;
+	  margin-bottom: 20px;
+	}
+  
+	.slide-title {
+	  font-size: 16px;
+	  margin-bottom: 5px;
+	}
+  
+	.slide-button {
+	  padding: 8px 16px;
+	}
+  
+	.slick-dots {
+	  bottom: 10px;
+	}
+  
+	.slide-content {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.slide {
+	  width: 100% !important;
+	}
+  }
+  

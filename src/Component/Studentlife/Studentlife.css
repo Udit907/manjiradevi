@@ -1,0 +1,149 @@
+.student-life {
+  text-align: center;
+  padding: 20px;
+  font-size: 17px;
+  background-color: #F6F7F9;
+  font-family:'Arial', sans-serif;
+}
+
+.student-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.student-card {
+  width: 400px;
+  padding: 25px;
+  text-align: center;
+}
+
+.student-card img {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.student-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(6, 5, 5, 0.906);
+}
+
+.student {
+  padding: 1px;
+}
+
+.student img {
+  width: 100%;
+  height: 480px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.student img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(201, 68, 20, 0.3);
+}
+
+.stud {
+  color: #FF4500; /* Bright orange color */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.stud1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #247647; /* Bright green color */
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .student-card, .student {
+    width: 45%;
+    padding: 15px;
+  }
+
+  .student img {
+    width: 100%;
+    height: auto;
+  }
+
+  .student-card img {
+    height: auto;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .student-card, .student {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .student-card img, .student img {
+    height: auto;
+    max-height: 240px;
+  }
+
+  .stud1 {
+    font-size: 30px;
+  }
+}
+
+/* Specific styling for dimensions of 872px to 1000px */
+@media (max-width: 1000px) {
+  .student-card, .student {
+    width: 32%;
+    padding: 10px;
+  }
+
+  .student-card img, .student img {
+    height: auto;
+    max-height: 240px;
+  }
+
+  .stud1 {
+    font-size: 35px;
+  }
+}
+
+/* Responsive between 1001px and 1400px */
+@media (max-width: 1400px) and (min-width: 1001px) {
+  .student-card, .student {
+    width: 32%;
+    padding: 10px;
+  }
+
+  .student-card img, .student img {
+    height: auto;
+    max-height: 240px;
+  }
+
+  .stud1 {
+    font-size: 35px;
+  }
+}
+
+/* Smaller mobile view */
+@media (max-width: 480px) {
+  .student-card img, .student img {
+    height: auto;
+    max-height: 500px;
+  }
+
+  .stud1 {
+    font-size: 24px;
+  }
+
+  .student-card, .student {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,117 @@
+.topbar {
+  background-color: rgb(77, 47, 15);
+  color: white;
+  padding: 10px 0;
+}
+
+.containerfluid {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center; /* Center text */
+}
+.tt{
+  font-weight: bold;
+  font-size: 16px;
+ 
+
+}
+
+.phdnotice {
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 0; /* Added margin for space between slider and links */
+  position: relative; /* Ensure the arrows are positioned relative to this container */
+}
+
+.topnav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center nav items */
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.topnav li {
+  margin: 0 8px; /* Adjust margins for better spacing */
+  display: flex;
+  align-items: center;
+}
+
+.topnav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.topnav li a:hover {
+  text-decoration: underline;
+}
+
+.topnav li a i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+}
+
+.socialmedia a {
+  margin-left: 10px;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slick-prev {
+  left: -25px; /* Adjust position as needed */
+}
+
+.slick-next {
+  right: -25px; /* Adjust position as needed */
+}
+
+@media (max-width: 768px) {
+  .containerfluid {
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+
+  .phdnotice {
+    padding: 7px;
+   margin-left: 35px;
+    text-align: center;
+    background-color: gray;
+  }
+
+  .topnav {
+    justify-content: center;
+    margin-right: 0;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+
+  .topnav li {
+    margin: 5px; /* Adjust margin for wrapping */
+  }
+
+  .socialmedia {
+    justify-content: center;
+    width: auto; /* Adjust width for better alignment */
+    margin-top: 0; /* Remove top margin to align with links */
+    margin-left: 10px; /* Add left margin to separate from last link */
+  }
+
+  .socialmedia a {
+    margin: 0 5px; /* Adjust margin for social media icons */
+  }
+}

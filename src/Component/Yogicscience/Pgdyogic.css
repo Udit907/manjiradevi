@@ -1,0 +1,31 @@
+.pgdyogic-image {
+    background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/phdyogic.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .pgdyogic-smt {
+   
+    font-weight: bold;
+    padding-top: 9%; 
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .pgdyogic-h1{
+    font-family: serif;
+  }
+  .pgdyogic-p{
+    text-align: justify;
+    font-family:serif;
+    font-size: 18px;
+  }
+  .pgdyogic-span{
+    color: #FD5F00;
+  }
+  .pgdyogicimage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  

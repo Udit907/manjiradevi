@@ -1,0 +1,44 @@
+.aboutimage {
+    background-image: linear-gradient(to left, rgba(24, 23, 23, 0.4), rgba(11, 11, 11, 0.4)), url("/public/msgimage.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .aboutsmt {
+    font-weight: bold;
+    padding-top: 9%;
+    font-size: 45px;
+    font-family: serif;
+  }
+  
+  .img-fluid {
+    width: 100%; /* Responsive width */
+    border-radius: 5px;
+  }
+  
+  /* Flex container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex: 0 0 24%; /* Each column takes up approximately 24% of the row */
+    margin-bottom: 15px; /* Add some bottom margin for spacing */
+  }
+  
+  /* Ensure images have proper spacing and alignment */
+  a.d-block {
+    margin-left: 10px; /* Default margin */
+  }
+  
+  /* Custom adjustment for 769px to 980px */
+  @media (min-width: 769px) and (max-width: 980px) {
+    a.d-block {
+      margin-left: 30px; /* Adjust margin for this range */
+    }
+  }
+  

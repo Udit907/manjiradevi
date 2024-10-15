@@ -1,0 +1,156 @@
+.student-speak {
+  padding: 50px 20px;
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+}
+
+.subheading {
+  display: block;
+  font-size: 19px;
+  color: #f96e5b;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(245, 241, 241);
+}
+
+.student1-card {
+  display: flex !important;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.student-image {
+  flex: 1;
+  max-width: 500px;
+  padding: 10px;
+}
+
+.student-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.student-content {
+  flex: 2;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.student-content h2 {
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 17px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-course {
+  font-size: 14px;
+  color: #f7f1f1;
+  margin-bottom: 15px;
+}
+
+.placed-at {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Slick Carousel Navigation Buttons */
+.slick-prev,
+.slick-next {
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: white;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .student1-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .student-content {
+    padding: 20px 10px;
+  }
+
+  .student-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .student-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .subheading {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+
+  .testimonial-name {
+    font-size: 18px;
+  }
+
+  .testimonial-course {
+    font-size: 12px;
+  }
+}

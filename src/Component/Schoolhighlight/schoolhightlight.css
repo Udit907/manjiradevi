@@ -1,0 +1,226 @@
+.hightlight-school {
+  color: #FD5F00;
+}
+.mstud{
+  margin-right: 15px;
+}
+.mstud3{
+  margin-top: 20px;
+}
+
+.hightlight-school1 {
+  font-size: 35px;
+  color: #0D1128;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.hightlight-school2 {
+  font-size: 26px;
+  color: #0D1128;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.high1 {
+  background-color: white;
+  box-shadow: 0 0px 1px;
+  border-radius: 10px;
+  border: none;
+  width: 380px;
+}
+
+.high3 {
+  background-color: #FD5F00;
+  gap: 0;
+  margin-left: -12px;
+  margin-right: -12px;
+  text-align: center;
+  font-family: serif;
+  font-size: 22px;
+  border-radius: 2px 2px 15px 15px;
+}
+
+.high4 {
+  padding: 33px;
+}
+
+.high2 {
+  background-color: #0D1128;
+  border-radius: 15px;
+  border: none;
+  width: 170px;
+}
+
+.high-p {
+  text-align: justify;
+  font-size: 18px;
+  font-family: serif;
+}
+
+.high-text {
+  font-family: serif;
+  color: #0D1128;
+  font-size: 24px;
+}
+
+.promise-h1 {
+  width: 60px; 
+  height: 60px;
+  background-color: #0D1128;
+  border-radius: 5px;
+}
+
+.promise-bg {
+  color: white;
+  font-size: 35px;
+}
+
+/* Mobile view for screens up to 811px */
+@media only screen and (max-width: 811px) {
+  .high3 {
+    font-size: 22px;
+    border-radius: 2px 2px 15px 15px;
+  }
+  
+  .high4 {
+    padding: 33px;
+  }
+  
+  .high2 {
+    width: 90px;
+  }
+}
+
+/* Mobile view for screens up to 768px */
+@media only screen and (max-width: 768px) {
+  .high3 {
+    font-size: 22px;
+    border-radius: 2px 2px 15px 15px;
+  }
+  
+  .high4 {
+    padding: 33px;
+  }
+  
+  .high2 {
+    width: 130px;
+  }
+}
+
+/* Mobile view for screens between 300px and 427px */
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .high3 {
+    font-size: 16px;
+    border-radius: 2px 2px 15px 15px;
+  }
+  
+  .high4 {
+    padding: 20px;
+  }
+  
+  .high2{
+    width: 103px;
+    
+  }
+  .high1{
+    max-width:330px;
+  }
+  .hightlight-school1{
+    font-size: 30px;
+    margin-left: -40px;
+  }
+  .hightlight-school2{
+    font-size: 28px;
+    margin-left: -40px;
+  }
+  .mstud{
+    margin-left: -52px;
+  }
+  .mstud1{
+    margin-left: -52px;
+  }
+  .mstud2{
+    margin-top:-20px ;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 580px) {
+  .high3 {
+    font-size: 16px;
+    border-radius: 2px 2px 15px 15px;
+  }
+  
+  .high4 {
+    padding: 20px;
+  }
+  
+  .high2 {
+    width: 92px;
+  }
+  .high1{
+    max-width:500px;
+  }
+  .hightlight-school1{
+    font-size: 30px;
+    margin-left: -40px;
+  }
+  .hightlight-school2{
+    font-size: 30px;
+    margin-left: -40px;
+  }
+  .high2{
+    width: 103px;
+    
+  }
+  .mstud{
+    margin-left: -52px;
+  }
+  .mstud1{
+    margin-left: -52px;
+  }
+  .mstud2{
+    margin-top:-20px ;
+  }
+  
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .high1{
+    max-width:500px;
+  }
+  .hightlight-school1{
+    font-size: 30px;
+    margin-left: -10px;
+  }
+  .high2{
+    width: 103px;
+    
+  }
+  .high4 {
+    padding: 20px;
+  }
+  .high3 {
+    font-size: 18px;
+    border-radius: 2px 2px 15px 15px;
+  }
+ .mstud1{
+  margin-top: 20px;
+ }
+}
+/* Responsive for screens between 1001px and 1400px */
+@media (max-width: 1400px) and (min-width: 1001px) {
+  .mstud1{
+    margin-top: 20px;
+   }
+  .high3 {
+    font-size: 22px;
+    border-radius: 2px 2px 15px 15px;
+  }
+
+  .high4 {
+    padding: 33px;
+  }
+
+  .high2 {
+    width: 130px;
+  }
+}

@@ -1,0 +1,265 @@
+.science-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/school.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.BachelorofScience-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science1.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.bca-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science6.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.ai-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science9.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.data-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science6.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.cyber-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science7.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.forensic-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science8.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.msc-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science2.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.mca-image {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/science4.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.school1-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.head img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 1;
+}
+
+.layer {
+  position: absolute;
+  top: -25%;
+  left: 15%;
+  width: 60%;
+  height: 110%;
+  background: rgba(231, 49, 49, 0);
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  color: rgb(250, 244, 244);
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+/* Card */
+.card1 {
+  position: relative;
+  transition: transform 0.2s;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+}
+
+.blink {
+  animation: blink 0.5s ease-in-out;
+}
+
+.vision-section,
+.mission-section {
+  background-color: #f57d0c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+  border: 2px;
+}
+
+.vision-section h2,
+.mission-section h2 {
+  font-size: 29px;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(241, 239, 233);
+}
+
+.mission-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.mission-section li {
+  margin-bottom: 10px;
+}
+
+.carousel-inner img {
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.carousel-image {
+  height: 430px;
+  object-fit: cover;
+}
+
+/* New Hover Effect for Image */
+.image-column {
+  position: relative;
+
+}
+
+.image-column:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-image {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .head img {
+    height: 300px;
+  }
+
+  .layer {
+    top: -15%;
+    left: 10%;
+    width: 80%;
+    height: 120%;
+  }
+
+  .vision-section h2,
+  .mission-section h2 {
+    font-size: 24px;
+  }
+
+  .carousel-image {
+    height: 250px;
+  }
+
+  .text-column {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 10px; /* add padding to container to prevent content from going out of space */
+  }
+  
+  .row {
+    margin: 0;
+  }
+
+  .col-md-6 {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px; /* add margin to cards to separate them */
+  }
+
+  .vision-section {
+    padding: 10px;
+  }
+
+  .carousel-inner {
+    height: 200px;
+  }
+
+  .carousel-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .head {
+    flex-direction: column;
+  }
+
+  .head h1 {
+    margin-bottom: 0;
+  }
+
+  .head img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .image-column {
+    text-align: center;
+  }
+
+  .image-column img {
+    width: 100%;
+    height: auto;
+  }
+}

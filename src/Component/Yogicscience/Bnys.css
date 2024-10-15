@@ -1,0 +1,108 @@
+/* Base styles */
+.bnysimage {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/bnys.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.bnyssmt {
+  font-weight: bold;
+  padding-top: 11%;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bnys-h1 {
+  font-family: serif;
+}
+
+.bnys-p {
+  text-align: justify;
+  font-family: serif;
+  font-size: 18px;
+}
+
+.bnys-span {
+  color: #FD5F00;
+}
+
+.bnys1image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .bnysimage {
+    height: 400px;
+  }
+
+  .bnyssmt {
+    font-size: 30px;
+  }
+
+  .bnys-h1 {
+    font-size: 1.5rem;
+  }
+
+  .bnys-p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bnysimage {
+    height: 300px;
+  }
+
+  .bnyssmt {
+    font-size: 25px;
+  }
+
+  .bnys-h1 {
+    font-size: 1.25rem;
+  }
+
+  .bnys-p {
+    font-size: 0.875rem;
+  }
+
+  .bnys1image {
+    border-radius: 15px;
+  }
+
+  .image-column {
+    text-align: center;
+  }
+
+  .image-column img {
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bnysimage {
+    height: 200px;
+  }
+
+  .bnyssmt {
+    font-size: 20px;
+  }
+
+  .bnys-h1 {
+    font-size: 1rem;
+  }
+
+  .bnys-p {
+    font-size: 0.75rem;
+  }
+
+  .image-column img {
+    max-height: 150px;
+  }
+}

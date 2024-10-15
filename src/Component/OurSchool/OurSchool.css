@@ -1,0 +1,149 @@
+/* Desktop view remains the same */
+.our-schools-slider {
+  padding: 50px 100px;
+  background-color: #0D1128;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.slider-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.slider-subtitle {
+  font-size: 19px;
+  color: #f96e5b;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+}
+
+.slide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+  margin: 0px 2px; /* Add margin to create gaps between slides */
+}
+
+.slide-image {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.slide-content {
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.slide-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FD5F00;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: #0D1128;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 20px; /* Position arrows near the bottom of the image */
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: white;
+}
+
+.slick-dots {
+  bottom: -30px; /* Align dots with arrows */
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Adjust margin for dot spacing */
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 767px) {
+  .our-schools-slider {
+    padding: 30px 20px;
+  }
+
+  .slider-title {
+    font-size: 24px;
+    margin-bottom: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .slider-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+
+  .slide-title {
+    font-size: 16px;
+    margin-bottom: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .slide-button {
+    padding: 8px 16px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    bottom: 10px; /* Adjust position closer to the bottom for smaller screens */
+  }
+
+  .slick-dots {
+    bottom: 10px; /* Adjust position closer to the bottom for smaller screens */
+  }
+
+  /* Ensure slide content is stacked vertically */
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ensure each slide takes full width on mobile */
+  .slide {
+    width: 100% !important;
+  }
+}

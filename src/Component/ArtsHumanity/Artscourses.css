@@ -1,0 +1,167 @@
+/* Artscourses.css */
+
+/* Base styles */
+.artsimage1 {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/manjiraimage1.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.artsimage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.baartsbg2 {
+  background-color: rgba(192, 178, 178, 0.2);
+}
+
+.whycolor {
+  background-color: #F6F7F9;
+}
+
+.baarts-span {
+  color: #FD5F00;
+}
+
+.promise-help {
+  background-color: white;
+  box-shadow: 0px 0px 1px;
+}
+
+.promise-bg2 {
+  color: #0D1128;
+  font-family: serif;
+  font-size: 41px;
+  font-weight: bold;
+}
+
+.promise-bg3 {
+  font-family: serif;
+  font-size: 19px;
+  text-align: justify;
+}
+
+.baarts-heading {
+  font-weight: bold;
+  font-family: serif;
+}
+
+.baarts-col {
+  border-radius: 17px;
+  box-shadow: 4px 4px 12px white;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Added transition */
+}
+
+.baarts-col:hover {
+  background-color: #0D1128;
+  color: white;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.baarts-image1 {
+  height: auto;
+  width: auto;
+  border-radius: 15px;
+}
+
+.baarts-cardh {
+  font-weight: bold;
+  font-family: serif;
+  margin-left: 15px;
+}
+
+.baarts-bt {
+  color: white;
+  background-color: #FD5F00;
+  width: 150px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 15px;
+  border-radius: 15px;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition */
+}
+
+.baarts-bt:hover {
+  background-color: gray;
+  color: white;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .artsimage1 {
+    height: 400px;
+  }
+
+  .nursingh {
+    font-size: 35px;
+  }
+
+  .nursing-p {
+    font-size: 15px;
+  }
+
+  .carousel-image {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .artsimage1 {
+    height: 300px;
+  }
+
+  .nursingh {
+    font-size: 1.25rem;
+  }
+
+  .nursing-p {
+    font-size: 0.875rem;
+  }
+
+  .carousel-image {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .baarts-cardh {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .baarts-bt {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .artsimage1 {
+    height: 200px;
+  }
+
+  .nursingh {
+    font-size: 30px;
+  }
+
+  .nursing-p {
+    font-size: 18px;
+  }
+
+  .carousel-image {
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .baarts-bt {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+.mscyogic1image {
+    background-image:linear-gradient(to left,rgba(10, 10, 10, 0.4),rgba(35, 34, 33, 0.4)), url("/public/yoga3.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .mscyogicsmt {
+   
+    font-weight: bold;
+    padding-top: 9%; 
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .mscyogic-h1{
+    font-family: serif;
+  }
+  .mscyogic-p{
+    text-align: justify;
+    font-family:serif;
+    font-size: 18px;
+  }
+  .mscyogic-span{
+    color: #FD5F00;
+  }
+  .mscyogicimage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }

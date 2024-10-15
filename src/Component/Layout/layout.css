@@ -1,0 +1,147 @@
+.text {
+  font-size: 23px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.dbuu-layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.left-column {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.right-column {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #0D1128;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+}
+
+.happening {
+  color: #FD5F00;
+}
+
+.happening,
+.placement-highlights,
+.campus-life {
+  margin-bottom: 40px;
+}
+
+.placement-highlights .placement-content,
+.campus-life .campus-life-content {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.happening .slide-content {
+  background: #0D1128;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.happening {
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.slide-content {
+  text-align: center;
+  color: #f8f8f8;
+}
+
+.slide-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f8f8f8;
+  text-align: center;
+}
+
+.slide-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FD5F00;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.slide-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.placement-content,
+.campus-life-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.placement-image {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.campus-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.campus-life-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.campus-life-item {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+/* Mobile view adjustments */
+@media (min-width: 768px) {
+  .dbuu-layout {
+    padding: 20px 50px;
+  }
+
+  .left-column {
+    width: 60%;
+    padding-right: 10px;
+  }
+
+  .right-column {
+    width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .dbuu-layout {
+    padding: 20px 150px;
+  }
+}

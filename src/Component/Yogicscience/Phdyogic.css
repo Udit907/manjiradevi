@@ -1,0 +1,31 @@
+.phdyogic-image {
+    background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/phdyogic.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .phdyogic-smt {
+   
+    font-weight: bold;
+    padding-top: 9%; 
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .phdyogic-h1{
+    font-family: serif;
+  }
+  .phdyogic-p{
+    text-align: justify;
+    font-family:serif;
+    font-size: 18px;
+  }
+  .phdyogic-span{
+    color: #FD5F00;
+  }
+  .phdyogicimage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  

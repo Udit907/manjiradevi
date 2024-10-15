@@ -1,0 +1,129 @@
+/* Base styles */
+.baartsimage {
+  background-image: linear-gradient(to left, rgba(60, 57, 55, 0.4), rgba(82, 79, 75, 0.4)), url("/public/arts1.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.maartsimage {
+  background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/arts2.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.phdartsimage {
+  background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/arts3.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.bedartsimage {
+  background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/arts5.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.arts1image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.artssmt {
+  font-weight: bold;
+  padding-top: 9%; 
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.arts-h1 {
+  font-family: serif;
+}
+
+.arts-p {
+  text-align: justify;
+  font-family: serif;
+  font-size: 18px;
+}
+
+.arts-span {
+  color: #FD5F00;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .baartsimage {
+    height: 400px;
+  }
+
+  .artssmt {
+    font-size: 30px;
+  }
+
+  .arts-h1 {
+    font-size: 1.5rem;
+  }
+
+  .arts-p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .baartsimage {
+    height: 300px;
+  }
+
+  .artssmt {
+    font-size: 25px;
+  }
+
+  .arts-h1 {
+    font-size: 1.25rem;
+  }
+
+  .arts-p {
+    font-size: 0.875rem;
+  }
+
+  .arts1image {
+    border-radius: 15px;
+  }
+
+  .image-column {
+    text-align: center;
+  }
+
+  .image-column img {
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .baartsimage {
+    height: 200px;
+  }
+
+  .artssmt {
+    font-size: 20px;
+  }
+
+  .arts-h1 {
+    font-size: 1rem;
+  }
+
+  .arts-p {
+    font-size: 0.75rem;
+  }
+
+  .image-column img {
+    max-height: 150px;
+  }
+}

@@ -1,0 +1,170 @@
+/* General Styles */
+.bd {
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.bd2 {
+  background-color: #FD5F00;
+  color: white;
+}
+
+.bd3 {
+  color: #FD5F00;
+}
+
+.dbuu-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.choose-programme h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #003366;
+  font-weight: bold;
+  font-family: serif;
+  text-transform: uppercase; /* Make text more impactful */
+}
+
+.dbuu-programmes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.programme-types {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.programme-types:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.programme-types ul, .programme-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programme-types li {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #003366;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.programme-types li:hover {
+  background-color: #003366; /* DBUU primary color */
+  color: #fff;
+}
+
+.programme-sections {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 600px; /* Set a max height for scrolling */
+}
+
+.programme-section {
+  margin-bottom: 20px; /* Space between sections */
+  padding: 15px;
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.programme-section:hover {
+  background-color: #f9f9f9; /* Light background on hover */
+}
+
+.programme-section h3 {
+  margin-top: 0; /* Remove top margin for better alignment */
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+}
+
+.programme-section li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.a1 {
+  text-decoration: none;
+}
+
+.program-section ul li a {
+  text-decoration: none;
+  color: inherit; /* Optional: ensures the link has the same color as the surrounding text */
+}
+
+.program-section ul li a:hover {
+  text-decoration: underline; /* Underline on hover for links */
+  color: #FD5F00; /* Change color on hover */
+}
+
+@media (max-width: 992px) {
+  .dbuu-programmes {
+    flex-direction: column;
+  }
+
+  .programme-types {
+    margin-bottom: 20px;
+  }
+
+  .programme-section h3 {
+    font-size: 18px;
+  }
+
+  .programme-section li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .choose-programme h2 {
+    font-size: 24px;
+  }
+
+  .programme-types li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .programme-section h3 {
+    font-size: 16px;
+  }
+
+  .programme-section li {
+    font-size: 12px;
+  }
+
+  .programme-sections {
+    padding: 10px;
+  }
+
+  .programme-types {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.legalimage1 {
+    background-image:linear-gradient(to left,rgba(12, 12, 12, 0.4),rgba(11, 11, 11, 0.4)), url("/public/law.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .ballb-image {
+    background-image:linear-gradient(to left,rgba(12, 12, 12, 0.4),rgba(11, 11, 11, 0.4)), url("/public/law1.jpg");
+    background-size: cover;
+    height:300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .llb-image {
+    background-image:linear-gradient(to left,rgba(12, 12, 12, 0.4),rgba(11, 11, 11, 0.4)), url("/public/law2.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
