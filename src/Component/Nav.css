@@ -11,7 +11,9 @@
   background-color: #0D1128;
   color: white;
 }
-
+.dropdown-menu {
+  z-index: 1050; /* Higher than the navbar to make sure dropdowns appear on top */
+}
 .new {
   background-color: red;
   color: white;
@@ -57,6 +59,10 @@
   background-color: #0D1128;
   font-weight: bold;
   font-size: 18px;
+  z-index: 1050;
+}
+.dropdown-menu {
+  z-index: 1060;
 }
 .bg3 {
   font-weight: bold;
@@ -130,19 +136,15 @@
   font-size: 19px; /* using em instead of px */
 }
 
-.anjali4 {
-  background-color: #FD5F00;
-  margin-left: 10px;
-  margin-top: 5px;
-  padding: 18px 25px;
-  color: white;
-  font-size: 17px;
-  font-weight: bold;
-  border-radius: 20px;
-}
 
-.anjali4:hover {
-  background-color: #0D1128;
+.anjali4{
+  background-color: #FD5F00;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 35px !important;
+}
+.anjali4:hover{
   color: white;
 }
 
@@ -152,42 +154,11 @@
     font-size: 15px;
   }
 }
-@media (min-width: 769px)  {
-  .anjali4 {
-    margin-left: 50px;
-    margin-top: -10px;
-  }
 
-}
-@media (min-width: 775px) {
-  .anjali4 {
-    margin-left: 60px;
-    margin-top: -10px;
-  }
-}
-@media (min-width: 847px) {
-  .anjali4 {
-    margin-left: 70px;
-    margin-top: -10px;
-  }
-}
-@media (min-width: 934px) {
-  .anjali4 {
-    margin-left: 80px;
-    margin-top: -10px;
-  }
-}
-@media (min-width: 978px) {
-  .anjali4 {
-    margin-left: 80px;
-    margin-top: -10px;
-  }
-}
-
-@media (min-width: 1025px) {
+ @media (min-width: 1025px) {
   .anjali4 {
     margin-left: 10px;
-    margin-top: 5px; /* Reset margin for larger screens */
+    margin-top: 5px; 
   }
 }
 @media (max-width: 480px) {
@@ -865,3 +836,12 @@
     display: block;  Show dropdowns on hover 
   } */
 }
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Make sure the navbar stays on top */
+  background-color: #343a40; /* Ensure a solid background color to overlay content beneath */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+

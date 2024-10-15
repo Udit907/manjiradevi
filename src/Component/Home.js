@@ -29,7 +29,7 @@ function Home() {
               <p class="text-white bg23">
                 Established Under Govt. Of Uttarakhand Vide Act No.05 of 2024
               </p>
-              <Link to="/contact" className="btn  anjali4  ">
+              <Link to="/contact" className="btn anjali4">
                 Contact Us
               </Link>
             </div>

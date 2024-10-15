@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 import TopNavBar from "./TopNav/TopNavbar";
 import Notnav from "./NotNav/Notnav";
@@ -8,6 +8,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+  const [activeSubsubDropdown, setActiveSubsubDropdown] = useState(null);
   const dropdownRef = useRef(null);
 
   const toggleNav = () => {
@@ -17,16 +18,22 @@ function Nav() {
   const toggleDropdown = (dropdown) => {
     if (activeDropdown === dropdown) {
       setActiveDropdown(null);  // Close the dropdown if clicked again
-      setActiveSubDropdown(null);  // Also close sub-dropdowns
+      setActiveSubDropdown(null);
+      setActiveSubsubDropdown(null)  // Also close sub-dropdowns
     } else {
       setActiveDropdown(dropdown);  // Open the clicked dropdown
-      setActiveSubDropdown(null);  // Close sub-dropdowns when main dropdown changes
+      setActiveSubDropdown(null);
+      setActiveSubsubDropdown(dropdown)  // Close sub-dropdowns when main dropdown changes
     }
   };
 
   const toggleSubDropdown = (subDropdown) => {
     setActiveSubDropdown(activeSubDropdown === subDropdown ? null : subDropdown);
   };
+
+  const toggleSubsubDropdown = (subsubDropdown) => {
+    setActiveSubsubDropdown(activeSubsubDropdown === subsubDropdown ? null : subsubDropdown)
+  }
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -46,7 +53,7 @@ function Nav() {
     <div>
       <TopNavBar />
       <Notnav />
-      <nav className="navbar navbar-expand-lg navbar-dark mt-0 p-2" ref={dropdownRef}>
+      <nav className="navbar navbar-expand-lg navbar-dark mt-0 p-2 sticky-top" ref={dropdownRef}>
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -69,7 +76,7 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                 onClick={() => toggleDropdown('about')}
+                  onClick={() => toggleDropdown('about')}
                   aria-expanded={activeDropdown === 'about'}
                   to="/" // Link to the page
                 >
@@ -151,7 +158,7 @@ function Nav() {
                       )}
                     </li>
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item mt-2" to="/" onClick={() => toggleSubDropdown('examination')}>
+                      <Link className="dropdown-item mt-2" to="#" onClick={() => toggleSubDropdown('examination')}>
                         Examination
                         <i className="fas fa-angle-right float-end"></i>
                       </Link>
@@ -159,12 +166,12 @@ function Nav() {
                         <ul className="dropdown-menu" style={{ columns: '1' }}><hr className="hr1nav" />
                           <li><Link className="dropdown-item" to="/notification">Notification</Link></li><hr className="hr1nav" />
                           <li className="dropdown-submenu">
-                            <Link className="dropdown-item" to="/" onClick={() => toggleSubDropdown('forms')}>
+                            <Link className="dropdown-item" to="#" onClick={() => toggleSubsubDropdown('forms')}>
                               Forms
                               <i className="fas fa-angle-right float-end"></i>
                             </Link>
-                            {activeSubDropdown === 'forms' && (
-                              <ul className="dropdown-menu" style={{ columns: '1' }}>
+                            {activeSubsubDropdown === 'forms' && (
+                              <ul className="dropdown-menu" style={{ columns: '1' }}><hr className="hr1nav" />
                                 <li><Link className="dropdown-item" to="/enrollment-form">Enrollment Form</Link></li><hr className="hr1nav" />
                                 <li><Link className="dropdown-item" to="/examination-form">Examination Form</Link></li><hr className="hr1nav" />
                                 <li><Link className="dropdown-item" to="/admit-card-verification">Admit Card & Verification Form</Link></li><hr className="hr1nav" />
