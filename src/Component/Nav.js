@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { Link} from "react-router-dom";
 import "./Nav.css";
 import TopNavBar from "./TopNav/TopNavbar";
 import Notnav from "./NotNav/Notnav";
@@ -8,25 +8,45 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+  const dropdownRef = useRef(null);
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
   };
 
   const toggleDropdown = (dropdown) => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
-    setActiveSubDropdown(null); // Close sub-dropdowns when main dropdown changes
+    if (activeDropdown === dropdown) {
+      setActiveDropdown(null);  // Close the dropdown if clicked again
+      setActiveSubDropdown(null);  // Also close sub-dropdowns
+    } else {
+      setActiveDropdown(dropdown);  // Open the clicked dropdown
+      setActiveSubDropdown(null);  // Close sub-dropdowns when main dropdown changes
+    }
   };
 
   const toggleSubDropdown = (subDropdown) => {
     setActiveSubDropdown(activeSubDropdown === subDropdown ? null : subDropdown);
   };
 
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setActiveDropdown(null);
+        setActiveSubDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div>
       <TopNavBar />
       <Notnav />
-      <nav className="navbar navbar-expand-lg navbar-dark mt-0 p-2">
+      <nav className="navbar navbar-expand-lg navbar-dark mt-0 p-2" ref={dropdownRef}>
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -49,11 +69,11 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onClick={() => toggleDropdown('about')}
+                 onClick={() => toggleDropdown('about')}
                   aria-expanded={activeDropdown === 'about'}
-                  to="/about" // Link to the page
+                  to="/" // Link to the page
                 >
-                  About us <i className="fas fa-chevron-down"></i>
+                  About us {activeDropdown === 'about' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
 
                 </Link>
                 {activeDropdown === 'about' && (
@@ -105,8 +125,9 @@ function Nav() {
                   role="button"
                   onClick={() => toggleDropdown('academics')}
                   aria-expanded={activeDropdown === 'academics'}
+                  to="/"
                 >
-                  Academics <i className="fas fa-chevron-down"></i>
+                  Academics {activeDropdown === 'academics' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
                 </Link>
                 {activeDropdown === 'academics' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
@@ -130,7 +151,7 @@ function Nav() {
                       )}
                     </li>
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item mt-2" to="#" onClick={() => toggleSubDropdown('examination')}>
+                      <Link className="dropdown-item mt-2" to="/" onClick={() => toggleSubDropdown('examination')}>
                         Examination
                         <i className="fas fa-angle-right float-end"></i>
                       </Link>
@@ -138,7 +159,7 @@ function Nav() {
                         <ul className="dropdown-menu" style={{ columns: '1' }}><hr className="hr1nav" />
                           <li><Link className="dropdown-item" to="/notification">Notification</Link></li><hr className="hr1nav" />
                           <li className="dropdown-submenu">
-                            <Link className="dropdown-item" to="#" onClick={() => toggleSubDropdown('forms')}>
+                            <Link className="dropdown-item" to="/" onClick={() => toggleSubDropdown('forms')}>
                               Forms
                               <i className="fas fa-angle-right float-end"></i>
                             </Link>
@@ -175,8 +196,9 @@ function Nav() {
                   role="button"
                   onClick={() => toggleDropdown('admission')}
                   aria-expanded={activeDropdown === 'admission'}
+                  to="/"
                 >
-                  Admission <i className="fas fa-chevron-down"></i>
+                  Admission {activeDropdown === 'admission' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
                 </Link>
                 {activeDropdown === 'admission' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
@@ -198,8 +220,9 @@ function Nav() {
                   role="button"
                   onClick={() => toggleDropdown('events')}
                   aria-expanded={activeDropdown === 'events'}
+                  to="/"
                 >
-                  Events <i className="fas fa-chevron-down"></i>
+                  Events {activeDropdown === 'events' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
                 </Link>
                 {activeDropdown === 'events' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
@@ -216,7 +239,7 @@ function Nav() {
                   aria-expanded={activeDropdown === 'career'}
                   to="/lifemanjira" // Link to the Career page
                 >
-                  Career <i className="fas fa-chevron-down"></i>
+                  Career {activeDropdown === 'career' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
                 </Link>
                 {activeDropdown === 'career' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>

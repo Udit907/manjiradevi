@@ -60,7 +60,7 @@ const TopNavBar = () => {
             <div className='tt'>Call at: 80063 45557</div>
           </Slider>
         </div>
-        <ul className="topnav   ">
+        <ul className="topnav">
           <li><Link to="/iqac">IQAC</Link></li>
           <li><Link to="/events">EVENTS</Link></li>
           <li><Link to="/login">LOGIN</Link></li>
