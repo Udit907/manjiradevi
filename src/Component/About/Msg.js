@@ -13,15 +13,19 @@ const Msg = () => {
             <h2 className='about-history' style={{ textAlign: 'center' }}>
               President's <span className='about-span'>Message</span>
             </h2>
-            <div style={{ textAlign: 'center', margin: '20px 0' }}>
-              <img src="/psdt.jpg" alt="President" className="registrar-photo" style={{ width: '450px' }} /> {/* Adjust width here */}
+            <div className="president col-md-12 d-flex gap-4">
+            <div style={{ textAlign: 'center', margin: '20px 0' }} >
+              <img src="/psdt.jpg" alt="President" className="registrar-photo" style={{ width: '450px' , borderRadius:"8px" }} /> {/* Adjust width here */}
             </div>
+            <div className="presidentP">
             <p className='history1 mt-3'>
               It is with immense pride and joy that I extend my warmest greetings to each of you as we embark on a momentous chapter in the history of our institution. From our humble beginnings as a group of institutions, we have now reached a significant milestone—the establishment of Smt. Manjira Devi University, nestled in the picturesque Himalayan region of Uttarakshi, Uttarakhand.
             </p>
             <p className='history1 mt-2'>
               For over 20 years, our journey has been guided by a steadfast commitment to excellence in education, innovation, and community service. Today, as we transition to university status, we celebrate not only our growth but also the enduring values that have shaped us into the institution we are today.
             </p>
+            </div>
+            </div>
             <div className='row mt-3'>
               <p className='history1 mt-2'>
                 Our university stands as a testament to the transformative power of education in the heart of the Himalayas. The majestic surroundings of Uttarakhand provide a unique backdrop for learning, research, and personal growth. As we embrace our new status, we reaffirm our dedication to providing a holistic educational experience that prepares our students to navigate the complexities of the modern world while honoring the rich cultural heritage and ecological significance of our region.

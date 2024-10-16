@@ -13,15 +13,19 @@ const Visemsg = () => {
             <h2 className='about-history' style={{ textAlign: 'center' }}>
               Vice Chancellor's <span className='about-span'>Message</span>
             </h2>
+            <div className="col-md-12 d-flex gap-4">
             <div style={{ textAlign: 'center', margin: '20px 0' }}>
-              <img src="/vc.jpg" alt="Vice Chancellor" className="registrar-photo" style={{ width: '450px' }} />
+              <img src="/vc.jpg" alt="Vice Chancellor" className="registrar-photo" style={{ width: '450px', borderRadius:"8px" }} />
             </div>
+            <div className="presidentP">
             <p className='history1 mt-3'>
               Dear Students, Faculty, Staff, and Esteemed Members of the Smt. Manjira Devi University Community,
             </p>
             <p className='history1 mt-2'>
               It is with great pleasure and pride that I extend my warmest greetings to all of you. As we embark on a new phase of our journey at Smt. Manjira Devi University, nestled in the serene Himalayan region of Uttarakshi, Uttarakhand, we reaffirm our commitment to excellence in education and community service.
             </p>
+            </div>
+            </div>
             <p className='history1 mt-2'>
               Our university holds a profound responsibility to our local community and the broader Himalayan region. With a legacy of promoting education that respects and integrates the rich cultural heritage and environmental significance of our surroundings, we are dedicated to nurturing future leaders and professionals who will contribute meaningfully to society.
             </p>

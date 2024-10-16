@@ -8,3 +8,9 @@
     background-color: #0D1128;
     color: white;
   }
+  .carousel-item img{
+    border-radius: 0px !important;
+    background-size: cover !important;
+    height: 530px;
+
+  }

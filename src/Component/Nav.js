@@ -9,22 +9,13 @@ function Nav() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
   const [activeSubsubDropdown, setActiveSubsubDropdown] = useState(null);
-  const dropdownRef = useRef(null);
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
   };
 
   const toggleDropdown = (dropdown) => {
-    if (activeDropdown === dropdown) {
-      setActiveDropdown(null);  // Close the dropdown if clicked again
-      setActiveSubDropdown(null);
-      setActiveSubsubDropdown(null)  // Also close sub-dropdowns
-    } else {
-      setActiveDropdown(dropdown);  // Open the clicked dropdown
-      setActiveSubDropdown(null);
-      setActiveSubsubDropdown(dropdown)  // Close sub-dropdowns when main dropdown changes
-    }
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
   const toggleSubDropdown = (subDropdown) => {
@@ -35,25 +26,17 @@ function Nav() {
     setActiveSubsubDropdown(activeSubsubDropdown === subsubDropdown ? null : subsubDropdown)
   }
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setActiveDropdown(null);
-        setActiveSubDropdown(null);
-      }
-    };
-
-    document.addEventListener("mousedown", handleOutsideClick);
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
+ 
 
   return (
     <div>
       <TopNavBar />
       <Notnav />
-      <nav className="navbar navbar-expand-lg navbar-dark mt-0 p-2 sticky-top" ref={dropdownRef}>
+      <nav className="navbar navbar-expand-lg navbar-dark mt-0 p-2 sticky-top" onMouseLeave={() => {
+          setActiveDropdown(null);
+          setActiveSubDropdown(null);
+          setActiveSubsubDropdown(null);
+        }}>
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -76,8 +59,7 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onClick={() => toggleDropdown('about')}
-                  aria-expanded={activeDropdown === 'about'}
+                  onMouseEnter={() => toggleDropdown('about')}
                   to="/" // Link to the page
                 >
                   About us {activeDropdown === 'about' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
@@ -85,10 +67,10 @@ function Nav() {
                 </Link>
                 {activeDropdown === 'about' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
-                    <li><Link className="dropdown-item mt-2" to="/history">History</Link></li><hr className="hr1nav" />
+                    <li><Link className="dropdown-item mt-2" to="/about">History</Link></li><hr className="hr1nav" />
                     <li><Link className="dropdown-item mt-2" to="/vision">Vision and Mission</Link></li><hr className="hr1nav" />
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item mt-2" to="#" onClick={() => toggleSubDropdown('leadership')}>
+                      <Link className="dropdown-item mt-2" to="#" onMouseEnter={() => toggleSubDropdown('leadership')}>
                         Leadership
                         <i className="fas fa-angle-right float-end"></i>
                       </Link>
@@ -104,7 +86,7 @@ function Nav() {
                       )}
                     </li>
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item mt-2" to="#" onClick={() => toggleSubDropdown('governingBodies')}>
+                      <Link className="dropdown-item mt-2" to="#" onMouseEnter={() => toggleSubDropdown('governingBodies')}>
                         Governing Bodies
                         <i className="fas fa-angle-right float-end"></i>
                       </Link>
@@ -130,7 +112,7 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onClick={() => toggleDropdown('academics')}
+                  onMouseEnter={() => toggleDropdown('academics')}
                   aria-expanded={activeDropdown === 'academics'}
                   to="/"
                 >
@@ -139,7 +121,7 @@ function Nav() {
                 {activeDropdown === 'academics' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item mt-2" to="#" onClick={() => toggleSubDropdown('ourSchools')}>
+                      <Link className="dropdown-item mt-2" to="#" onMouseEnter={() => toggleSubDropdown('ourSchools')}>
                         Our Schools
                         <i className="fas fa-angle-right float-end"></i>
                       </Link>
@@ -158,7 +140,7 @@ function Nav() {
                       )}
                     </li>
                     <li className="dropdown-submenu">
-                      <Link className="dropdown-item mt-2" to="#" onClick={() => toggleSubDropdown('examination')}>
+                      <Link className="dropdown-item mt-2" to="#" onMouseEnter={() => toggleSubDropdown('examination')}>
                         Examination
                         <i className="fas fa-angle-right float-end"></i>
                       </Link>
@@ -166,7 +148,7 @@ function Nav() {
                         <ul className="dropdown-menu" style={{ columns: '1' }}><hr className="hr1nav" />
                           <li><Link className="dropdown-item" to="/notification">Notification</Link></li><hr className="hr1nav" />
                           <li className="dropdown-submenu">
-                            <Link className="dropdown-item" to="#" onClick={() => toggleSubsubDropdown('forms')}>
+                            <Link className="dropdown-item" to="#" onMouseEnter={() => toggleSubsubDropdown('forms')}>
                               Forms
                               <i className="fas fa-angle-right float-end"></i>
                             </Link>
@@ -201,7 +183,7 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onClick={() => toggleDropdown('admission')}
+                  onMouseEnter={() => toggleDropdown('admission')}
                   aria-expanded={activeDropdown === 'admission'}
                   to="/"
                 >
@@ -225,7 +207,7 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onClick={() => toggleDropdown('events')}
+                  onMouseEnter={() => toggleDropdown('events')}
                   aria-expanded={activeDropdown === 'events'}
                   to="/"
                 >
@@ -242,7 +224,7 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onClick={() => toggleDropdown('career')}
+                  onMouseEnter={() => toggleDropdown('career')}
                   aria-expanded={activeDropdown === 'career'}
                   to="/lifemanjira" // Link to the Career page
                 >

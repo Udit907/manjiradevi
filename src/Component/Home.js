@@ -2,22 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import OurSchool from "../Component/OurSchool/OurSchool";
 import Program from "../Component/Program/Program";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Nav.css";
-
+import "./Home.css"
 import StudentSpeak from "./Testimonial/StudentSpeak";
 import StudentLife from "./Studentlife/Studentlife";
 import Gallery from "./Gallery/Gallery";
 import Accreditations from "./Accreditations/Accreditations";
 import Schoolhighlight from "./Schoolhighlight/Schoolhighlight";
+import homeimg from "../images/123.jpeg"
+import homeimg1 from "../images/124.jpeg"
+import homeimg2 from "../images/125.jpg"
+
 
 function Home() {
-  
+
 
   return (
     <div>
-      <div class="container-fluid bg6 ">
+      {/* <div class="container-fluid bg6 ">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 mt-4 ">
@@ -35,7 +38,45 @@ function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+       <div
+        id="carouselExampleInterval"
+        className="carousel slide"
+        data-bs-ride="carousel"
+       
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active" >
+            <img src={homeimg} className="d-block w-100" alt="..."  data-bs-interval={5000} />
+          </div>
+          <div className="carousel-item">
+            <img src={homeimg1} className="d-block w-100" alt="..."  data-bs-interval={2000} />
+          </div>
+          <div className="carousel-item">
+            <img src={homeimg2} className="d-block w-100" alt="..."/>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
+
+
 
       <div className="container mt-5 ww1">
         <div className="row">

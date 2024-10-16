@@ -10,9 +10,11 @@ const Registarmsg = () => {
           <div className='row'>
             <h2 className='about-history text-center'>Registrar's <span className='about-span'>Message</span></h2>
             {/* Make the image smaller */}
-            <div style={{ textAlign: 'center', margin: '20px 0' }}>
-            <img src="/rgstr.png" alt="Registrar" className="registrar-photo" style={{ width: '200px', marginTop: '20px' }} />
+            <div className="col-md-12 d-flex gap-4">
+            <div style={{ textAlign: 'center'}}>
+            <img src="/rgstr.png" alt="Registrar" className="registrar-photo" style={{ width: '400px', marginTop: '18px', borderRadius:'8px'}} />
             </div>
+            <div className="presidentP">
             <p className='history1 mt-3'>
               Welcome to Smt. Manjira Devi University, nestled in the serene and majestic Himalayan region of Uttarakshi, Uttarakhand!
             </p>
@@ -22,6 +24,9 @@ const Registarmsg = () => {
             <p className='history1 mt-2'>
               Our university stands as a testament to the transformative power of education in the heart of the Himalayas. The majestic surroundings of Uttarakhand provide a unique backdrop for learning, research, and personal growth. As we embrace our new status, we reaffirm our dedication to providing a holistic educational experience that prepares our students to navigate the complexities of the modern world while honoring the rich cultural heritage and ecological significance of our region.
             </p>
+          
+            </div>
+            </div>
             <p className='history1 mt-2'>
               Our university's location in the heart of the Himalayas offers an unparalleled setting for learning and personal growth. The breathtaking landscapes and tranquil environment provide an inspiring backdrop for our students, faculty, and staff. Here, you will find a harmonious blend of tradition and modernity, where ancient wisdom meets contemporary knowledge.
             </p>
