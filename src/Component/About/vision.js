@@ -4,14 +4,15 @@ import './vision.css';
 const Vision = () => {
   return (
     <div className="vision-page">
-      <div className="header">
+      {/* <div className="header">
         <div className="overlay1" >
           <h1 style={{position:'absolute'}} ><span className="pipe">|</span> 
            <span className="text" style={{ fontSize: '2.3rem' }}>Vision & Mission</span></h1>
         </div>
         <img src="/vision.png" alt="Vision Background" />
-      </div>
-      <div className="container mt-5">
+      </div> */}
+      <h1 className="text-center mt-4 fw-bold">VISION & MISSION</h1>
+      <div className="container">
         <div className="content">
           <div className="vision">
             <h2 className="mission2">Our Vision</h2>

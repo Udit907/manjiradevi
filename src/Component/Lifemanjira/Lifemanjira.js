@@ -3,7 +3,7 @@ import React from 'react';
 const JoinOurTeam = () => {
   return (
     <div>
-      <div className="container-fluid msgimage11">
+      {/* <div className="container-fluid msgimage11">
         <div className="container">
           <div className="row">
             <div className="col-12 mt-4">
@@ -13,7 +13,7 @@ const JoinOurTeam = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container">
         <h1 style={{ textAlign: 'center' }}>Join Our Team</h1>

@@ -121,6 +121,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .vices{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .registerar{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .aboutsmt {
         font-size: 30px;
         padding-top: 15%;

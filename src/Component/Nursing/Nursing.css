@@ -19,6 +19,9 @@
     width: 100%;
     background-repeat: no-repeat;
   }
+  .library-heading{
+    text-align: center;
+  }
   .bpharmaimage1 {
     background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/bpharma.jpg");
     background-size: cover;
@@ -109,8 +112,7 @@
 }
 .cad-col{
   border-radius: 17px;
-  box-shadow: 4px 4px 12px white;
- 
+  box-shadow: 4px 4px 12px white; 
 }
 .cad-col:hover{
   background-color: #0D1128;

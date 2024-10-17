@@ -18,6 +18,9 @@
 .baartsbg2 {
   background-color: rgba(192, 178, 178, 0.2);
 }
+.card{
+  width: 250px;
+}
 
 .whycolor {
   background-color: #F6F7F9;

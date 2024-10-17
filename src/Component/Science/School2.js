@@ -98,7 +98,7 @@ function School2() {
 <h1 className=' baarts-heading mb-3'>Our <span className='baarts-span'>Courses</span> </h1>
           <div className="row mt-5">
           <div className="col-md-4">
-            <div className="card1" style={{border:'2px', boxShadow:'0px 10px 10px rgb(00,0,0)'}}>
+            <div className="card1">
               <h4 className="card-title khusbhucard-heading">Bachelor of Science in PCM/PCB/ZBC/CS</h4>
               <p className="card-text khusbhucard-paiding">
                 Learn the fundamentals of Science and develop skills in
@@ -109,7 +109,7 @@ function School2() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{border:'2px', boxShadow:'0px 10px 10px rgb(00,0,0)'}}>
+            <div className="card1" >
               <h4 className="card-title khusbhucard-heading">Bachelor of Computer Applications (BCA)</h4>
               <p className="card-text khusbhucard-paiding">
                 Explore the world of Computer Application and develop skills in
@@ -120,7 +120,7 @@ function School2() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{border:'2px', boxShadow:'0px 10px 10px rgb(00,0,0)'}}>
+            <div className="card1" >
               <h4 className="card-title khusbhucard-heading">Master of Science - PCM/PCB/ZBC/CS</h4>
               <p className="card-text khusbhucard-paiding">
                 Learn the fundamentals of Science and develop skills in
@@ -131,7 +131,7 @@ function School2() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{border:'2px', boxShadow:'0px 10px 10px rgb(00,0,0)'}}>
+            <div className="card1" >
               <h4 className="card-title khusbhucard-heading">Master of Computer Applications (MCA)</h4>
               <p className="card-text khusbhucard-paiding">
                 Explore the world of Mechanical Engineering and develop skills in
@@ -142,7 +142,7 @@ function School2() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{border:'2px', boxShadow:'0px 10px 10px rgb(00,0,0)'}}>
+            <div className="card1">
               <h4 className="card-title khusbhucard-heading" >Diploma - AI and ML / Data Science & Cloud Technology / Cyber Security / Forensic Science</h4>
               <p className="card-text khusbhucard-paiding">
                 Dive into the world of technologies and

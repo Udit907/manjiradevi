@@ -13,7 +13,7 @@ const Visemsg = () => {
             <h2 className='about-history' style={{ textAlign: 'center' }}>
               Vice Chancellor's <span className='about-span'>Message</span>
             </h2>
-            <div className="col-md-12 d-flex gap-4">
+            <div className="vices col-md-12 d-flex gap-4">
             <div style={{ textAlign: 'center', margin: '20px 0' }}>
               <img src="/vc.jpg" alt="Vice Chancellor" className="registrar-photo" style={{ width: '450px', borderRadius:"8px" }} />
             </div>

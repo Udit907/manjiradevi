@@ -99,10 +99,10 @@ function School4() {
 </div>
 <div className='container-fluid mt-4 baartsbg2 p-4'>
 <div className="container mt-3">
-<h1 className=' baarts-heading mb-3'>Our <span className='baarts-span'>Courses</span> </h1>
+<h1 className='baarts-heading mb-3'>Our <span className='baarts-span'>Courses</span> </h1>
         <div className="row mt-5">
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1">
               <h4 className="card-title khusbhucard-heading">Diploma in Agriculture </h4>
               <p className="card-text khusbhucard-paiding">
                 Learn the fundamentals of Agriculture and develop skills in
@@ -112,7 +112,7 @@ function School4() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1">
               <h5 className="card-title khusbhucard-heading">Bachelor of Science in Agriculture</h5>
               <p className="card-text khusbhucard-paiding">
                 Explore the world of Agriculture and develop skills in
@@ -122,7 +122,7 @@ function School4() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1">
               <h5 className="card-title khusbhucard-heading">Master of Science in Agriculture</h5>
               <p className="card-text khusbhucard-paiding">
                 Dive into the world of Agriculture and
@@ -132,7 +132,7 @@ function School4() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1">
               <h5 className="card-title khusbhucard-heading">Master of Science in Horticulture </h5>
               <p className="card-text khusbhucard-paiding">
                 Dive into the world of Horticulture and

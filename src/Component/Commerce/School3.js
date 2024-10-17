@@ -88,7 +88,7 @@ function School3() {
 <h1 className=' baarts-heading mb-3'>Our <span className='baarts-span'>Courses</span> </h1>
         <div className="row mt-5">
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1" >
               <h5 className="card-title khusbhucard-heading">B.Com</h5>
               <p className="card-text khusbhucard-paiding">
                 Learn the fundamentals of B.Com and develop skills in
@@ -99,7 +99,7 @@ function School3() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1" >
               <h5 className="card-title khusbhucard-heading">BBA</h5>
               <p className="card-text khusbhucard-paiding">
                 Explore the world of BBA and develop skills in
@@ -109,7 +109,7 @@ function School3() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1">
               <h5 className="card-title khusbhucard-heading">M.Com</h5>
               <p className="card-text khusbhucard-paiding">
                 Dive into the world of M.Com and develop skills in
@@ -122,7 +122,7 @@ function School3() {
         </div>
         <div className="row mt-5">
         <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1" >
               <h5 className="card-title khusbhucard-heading">MBA</h5>
               <p className="card-text khusbhucard-paiding">
                 Learn the fundamentals of MBA and develop skills in Strategic Management, Business Analytics, Financial Accounting, Organizational Behavior, Operations Management
@@ -132,7 +132,7 @@ function School3() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card1" style={{ border: '2px', boxShadow: '0px 10px 10px rgb(00,0,0)' }}>
+            <div className="card1" >
               <h5 className="card-title khusbhucard-heading">P.hd</h5>
               <p className="card-text khusbhucard-paiding">
                 Learn the fundamentals of P.hd and develop skills in

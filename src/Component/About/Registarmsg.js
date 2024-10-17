@@ -10,7 +10,7 @@ const Registarmsg = () => {
           <div className='row'>
             <h2 className='about-history text-center'>Registrar's <span className='about-span'>Message</span></h2>
             {/* Make the image smaller */}
-            <div className="col-md-12 d-flex gap-4">
+            <div className="registerar col-md-12 d-flex gap-4">
             <div style={{ textAlign: 'center'}}>
             <img src="/rgstr.png" alt="Registrar" className="registrar-photo" style={{ width: '400px', marginTop: '18px', borderRadius:'8px'}} />
             </div>
