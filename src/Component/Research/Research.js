@@ -4,7 +4,7 @@ import './Research.css';
 const Research = () => {
   return (
     <div>
-      <div className="container-fluid aboutimage">
+      {/* <div className="container-fluid aboutimage">
         <div className="container">
           <div className="row">
             <div className="col-12 mt-4">
@@ -14,7 +14,7 @@ const Research = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container-fluid">
         <div className="container">
           <h1 className="fw-light text-center mt-4 mb-0">Our Gallery</h1>

@@ -20,25 +20,6 @@ function Home() {
 
   return (
     <div>
-      {/* <div class="container-fluid bg6 ">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 mt-4 ">
-              <h1 class="text-white  display-3 bg21 ">
-                Smt. Manjira <br />
-                Devi University
-              </h1>
-
-              <p class="text-white bg23">
-                Established Under Govt. Of Uttarakhand Vide Act No.05 of 2024
-              </p>
-              <Link to="/contact" className="btn anjali4">
-                Contact Us
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div> */}
        <div
         id="carouselExampleInterval"
         className="carousel slide"
@@ -47,10 +28,10 @@ function Home() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active" >
-            <img src={homeimg} className="d-block w-100" alt="..."  data-bs-interval={5000} />
+            <img src={homeimg} className="d-block w-100" alt="..."  data-bs-interval="3000" />
           </div>
           <div className="carousel-item">
-            <img src={homeimg1} className="d-block w-100" alt="..."  data-bs-interval={2000} />
+            <img src={homeimg1} className="d-block w-100" alt="..."  data-bs-interval="1000" />
           </div>
           <div className="carousel-item">
             <img src={homeimg2} className="d-block w-100" alt="..."/>
@@ -81,7 +62,7 @@ function Home() {
       <div className="container mt-5 ww1">
         <div className="row">
           <div className="col-md-5">
-            <h1>
+            <h1 className="text-center">
               <span className="bg3">19+ Years</span> Of Excellence
             </h1>
             <div className="row mt-3 ">
@@ -108,10 +89,10 @@ function Home() {
             </div>
           </div>
           <div className="col-md-5 mt-2 ">
-            <h1>
+            <h1 className="text-center">
               <span className="bg3">Academics</span> Notifications
             </h1>
-            <div className="row">
+            <div className="row cards">
               <div className="col-md-4 ww  ">
                 <div className="card bf mt-2 p-3">
                   <center>

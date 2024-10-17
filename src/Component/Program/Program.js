@@ -46,7 +46,7 @@ function Program() {
         <div className="choose-programme">
           <h2>CHOOSE YOUR <span className="bd3">PROGRAMME</span></h2>
         </div>
-        <div className="dbuu-programmes">
+        <div className="dbuu-programmes d-flex flex-wrap justify-content-center align-items-start">
           <div className="programme-types">
             <ul>
               <li className={`bd2 text-white text-center ${selectedProgram === 'UNDERGRADUATE' ? 'active' : ''}`} onClick={() => handleProgramClick('UNDERGRADUATE')}>UNDERGRADUATE</li>
@@ -57,7 +57,7 @@ function Program() {
           </div>
           <div className="programme-sections">
             {programs[selectedProgram].map((section, index) => (
-              <div key={index} className="programme-section">
+              <div key={index} className="programme-section ">
                 <h3>{section.school}</h3>
                 <ul>
                   {section.courses.map((course, i) => (

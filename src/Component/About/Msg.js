@@ -13,7 +13,7 @@ const Msg = () => {
             <h2 className='about-history' style={{ textAlign: 'center' }}>
               President's <span className='about-span'>Message</span>
             </h2>
-            <div className="president col-md-12 d-flex gap-4">
+            <div className="president col-md-12 d-flex  gap-4">
             <div style={{ textAlign: 'center', margin: '20px 0' }} >
               <img src="/psdt.jpg" alt="President" className="registrar-photo" style={{ width: '450px' , borderRadius:"8px" }} /> {/* Adjust width here */}
             </div>

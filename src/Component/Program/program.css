@@ -42,7 +42,7 @@
   flex: 1;
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 9px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-width: 250px;
   transition: transform 0.3s; /* Smooth hover effect */
@@ -76,10 +76,11 @@
 .programme-sections {
   flex: 3;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 9px;
+  border-radius: 9px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
+  /* max-width: 270px; */
   max-height: 600px; /* Set a max height for scrolling */
 }
 
@@ -105,24 +106,22 @@
 }
 
 .programme-section li {
+  list-style: none;
   padding: 5px 0;
   font-size: 16px;
   color: #555;
 }
 
-.a1 {
+.programme-section li a{
   text-decoration: none;
+  font-size: large;
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+}
+.programme-section li a:hover{
+ color: #FD5F00;
 }
 
-.program-section ul li a {
-  text-decoration: none;
-  color: inherit; /* Optional: ensures the link has the same color as the surrounding text */
-}
-
-.program-section ul li a:hover {
-  text-decoration: underline; /* Underline on hover for links */
-  color: #FD5F00; /* Change color on hover */
-}
 
 @media (max-width: 992px) {
   .dbuu-programmes {
@@ -146,7 +145,9 @@
   .choose-programme h2 {
     font-size: 24px;
   }
-
+.programme-types{
+  min-width: 270px;
+}
   .programme-types li {
     font-size: 16px;
     padding: 10px;
@@ -162,6 +163,7 @@
 
   .programme-sections {
     padding: 10px;
+    max-width: 270px;
   }
 
   .programme-types {

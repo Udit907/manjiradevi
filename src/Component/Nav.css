@@ -60,10 +60,11 @@
   color: white;
 }
 .navbar {
+  /* position: relative; */
   background-color: #0D1128;
   font-weight: bold;
   font-size: 18px;
-  z-index: 1050;
+  z-index: 1060;
 }
 .dropdown-menu {
   z-index: 1060;
@@ -135,39 +136,6 @@
   margin-left: 5px;
   font-size: 19px; /* using em instead of px */
 }
-
-
-.anjali4{
-  background-color: #FD5F00;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px 35px !important;
-}
-.anjali4:hover{
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .anjali4 {
-    padding: 15px 20px;
-    font-size: 15px;
-  }
-}
-
- @media (min-width: 1025px) {
-  .anjali4 {
-    margin-left: 10px;
-    margin-top: 5px; 
-  }
-}
-@media (max-width: 480px) {
-  .anjali4 {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
-}
-
 .bg11 {
   background-color: #FD5F00;
   color: white;
@@ -176,12 +144,6 @@
   background-color: #0D1128;
   color: white;
 }
-/* .navbar .dropdown-toggle-no-arrow::after {
-  display: none;
-}
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-} */
 .navbar .dropdown-menu.no-arrow {
   margin-top: 0;
   padding-top: 0;
@@ -206,7 +168,6 @@
   .bg6 {
     height: 400px;
   }
-  
   .bg24:hover {
     background-color: #0D1128;
     color: white;
@@ -800,14 +761,14 @@
     margin-top: 0 !important; 
     box-shadow: none; 
     visibility: visible; 
-    display: none; 
+    /* display: none;  */
     opacity: 1; 
     transition: none; 
   }
 
-  .dropdown-menu.show {
+  /* .dropdown-menu.show {
     display: block; 
-  }
+  } */
 
   .dropdown-submenu {
     position: static !important; 
@@ -822,26 +783,11 @@
     left: 100%; 
     text-decoration: none;
   }
-  .navbar-nav .nav-item {
-    position: relative; /* Needed for absolute positioning of dropdowns */
-  }
+ 
   
-  .navbar-nav .dropdown-menu {
-    display: none; /* Hide dropdowns by default */
-    position: absolute; /* Position them absolutely */
-    z-index: 1000; /* Ensure they are on top of other elements */
-  }
   
-  /* .navbar-nav .nav-item:hover .dropdown-menu {
-    display: block;  Show dropdowns on hover 
-  } */
+  
 }
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Make sure the navbar stays on top */
-  background-color: #343a40; /* Ensure a solid background color to overlay content beneath */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-}
+
 
 
