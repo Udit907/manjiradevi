@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import { Link } from "react-router-dom";
 import OurSchool from "../Component/OurSchool/OurSchool";
 import Program from "../Component/Program/Program";
@@ -16,6 +16,19 @@ import homeimg2 from "../images/125.jpg"
 
 
 function Home() {
+  const marqueeRef = useRef(null); // Create a reference to the marquee element
+
+  const handleMouseEnter = () => {
+    if (marqueeRef.current) {
+      marqueeRef.current.stop(); // Stop the marquee on hover
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (marqueeRef.current) {
+      marqueeRef.current.start(); // Resume the marquee when mouse leaves
+    }
+  };
 
 
   return (
@@ -56,7 +69,17 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
+    <div className="bg-primary">
+      <div style={{ width: '80%', margin: '0 auto' }}>
+       <marquee className="marq" ref={marqueeRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+        <p className="text-white mt-3">"2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
+        "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
+        </p>
+       </marquee>
+       </div>
+    </div>
 
 
       <div className="container mt-5 ww1">

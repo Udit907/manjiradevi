@@ -2,7 +2,9 @@
 .bg {
   color: #FD5F00;
 }
-
+.marq:hover{
+  cursor: pointer;
+}
 .bg1 {
   background-color: #FD5F00;
   color: white;

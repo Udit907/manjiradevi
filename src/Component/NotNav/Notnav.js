@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PopupForm from './PopupForm';  // Ensure this file exists and the name is correct
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Notnav.css";
+import Logo from "../../images/logo.jpeg"
 
 const Notnav = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -17,7 +18,14 @@ const Notnav = () => {
       <div className="container-fluid ww3">
         <div className="row mb-0">
           <div className="col-md-4 mt-1 ">
-            <img src="smt3.png" height="110px" width="230px" alt="Manjira Logo" />
+            <div className="row">
+              <div className="col-md-3">
+            <img src={Logo} height="110px" alt="Manjira Logo" />
+              </div>
+              <div className="col-md-9 d-flex align-items-center justify-content-center ">
+            <span className="fs-3 fw-bold custom-text-color" >Smt. Manjira Devi <span className="custom-color">University</span></span>
+              </div>
+            </div> 
           </div>
           
           <div className="col-md-3">

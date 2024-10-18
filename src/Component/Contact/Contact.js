@@ -16,7 +16,7 @@ const ContactUs = () => {
       <div className="row">
         <div className="col-md-6 contact-info">
           <div>
-            <h3>Address</h3>
+            <h3>Campus</h3>
             <p>
               Manjira Devi Campus Hintanu Dhanari, Uttarkashi<br />
               Dehradun, Uttarakhand, INDIA
