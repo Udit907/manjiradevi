@@ -4,7 +4,7 @@ import React from 'react';
 import Nursingcourses from './Nursingcourses';
 const Nursingschool = () => {
   return <div>
-     <div class="container-fluid nursingimage1  ">
+     {/* <div class="container-fluid nursingimage1  ">
  <div class="container">
     <div class="row">
        <div class="col-sm-12 mt-4 ">
@@ -13,7 +13,9 @@ const Nursingschool = () => {
   </div>
       </div>
     </div>
-</div>
+</div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center">School Of Nursing , Paramedical & Allied Science</h1>
+
 <div className='container-fluid mt-5  '>
   <div className='container p-5 '>
     <div className='row'>

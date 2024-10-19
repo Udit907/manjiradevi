@@ -4,7 +4,7 @@ import './Hotel.css';
 import Hotelcourses from './Hotelcourses';
 const Hotelschool = () => {
   return <div>
-     <div class="container-fluid hmimage1  ">
+     {/* <div class="container-fluid hmimage1  ">
  <div class="container">
     <div class="row">
        <div class="col-sm-12 mt-4 ">
@@ -13,7 +13,9 @@ const Hotelschool = () => {
   </div>
       </div>
     </div>
-</div>
+</div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center">School Of Hotel Management & Tourism</h1>
+
 <div className='container-fluid mt-5  '>
   <div className='container p-5 '>
     <div className='row'>

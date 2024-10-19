@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 function School3() {
   return (
     <div className="School1-page">
-       <div class="container-fluid commerce-image  ">
- <div class="container">
+       {/* <div class="container-fluid commerce-image  "> */}
+ {/* <div class="container">
     <div class="row">
        <div class="col-sm-12 mt-4 ">
    <center> <h2 class="text-white  display-3 nursingsmt  ">School of Commerce and Management Studies</h2></center>
@@ -15,8 +15,10 @@ function School3() {
   </div>
       </div>
     </div>
-</div>
-<div className="container-fluid mt-5">
+</div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center">School of Commerce and Management Studies</h1>
+
+<div className="container-fluid">
       <div className="container p-2">
         <div
           className="row"
@@ -27,8 +29,8 @@ function School3() {
           }}
         >
           <br></br>
-          <div className="col-md-6"></div>
-          <h2 className="mb-2 mt-1 nursingh">
+          <div className="col-md-6 mt-4"></div>
+          <h2 className="mb-2 nursingh">
                 <span className="nursing-span">About </span>Us
               </h2>
           <div className="col-md-6 text-column p-3" style={{ fontSize: "18px",fontFamily:"serif",textAlign:"justify" }}>

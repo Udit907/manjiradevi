@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function School4() {
   return (
     <div className="school1-page">
-      <div className="container-fluid agriculture-image">
+      {/* <div className="container-fluid agriculture-image">
         <div className="container">
           <div className="row">
             <div className="col-12 mt-4">
@@ -19,7 +19,9 @@ function School4() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center">School of Agriculture</h1>
+      
       <div className="container-fluid mt-5">
 <div className="container p-2">
         <div

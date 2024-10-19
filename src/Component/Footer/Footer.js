@@ -18,10 +18,11 @@ const Footer = () => {
                 <div className="get-in-touch">
                     <h2>GET IN TOUCH</h2>
                     <br/>
-                    <p>Address:</p>
-                    <p>Manjira Devi Campus</p>
-                    <p>Hintanu Dhanari, Uttarkashi</p>
-                    <p>Dehradun, Uttarakhand, INDIA</p>
+                    <p>Campus:</p>
+                    <p>Smt. Manjira Devi University</p>
+                    <p>Uttarkashi (श्रीमती मंजीरा देवी विश्वविद्यालय, उत्तरकाशी) Rukmani Nagar</p>
+                    <p>Hitanu Dhanari, Dunda</p>
+                    <p>Uttarkashi, Hitaru, Uttarakhand 249151</p>
                     <br/>
                     <p>Admissions & Outreach:</p>
                     <p>91-80063-45557 , 91-80063-45558</p>

@@ -15,7 +15,7 @@ const Visemsg = () => {
             </h2>
             <div className="vices col-md-12 d-flex gap-4">
             <div style={{ textAlign: 'center', margin: '20px 0' }}>
-              <img src="/vc.jpg" alt="Vice Chancellor" className="registrar-photo" style={{ width: '450px', borderRadius:"8px" }} />
+              <img src="/vc.jpg" alt="Vice Chancellor" className="registrar-photo" style={{ width: '350px', borderRadius:"8px" }} />
             </div>
             <div className="presidentP">
             <p className='history1 mt-3'>
@@ -24,11 +24,12 @@ const Visemsg = () => {
             <p className='history1 mt-2'>
               It is with great pleasure and pride that I extend my warmest greetings to all of you. As we embark on a new phase of our journey at Smt. Manjira Devi University, nestled in the serene Himalayan region of Uttarakshi, Uttarakhand, we reaffirm our commitment to excellence in education and community service.
             </p>
-            </div>
-            </div>
             <p className='history1 mt-2'>
               Our university holds a profound responsibility to our local community and the broader Himalayan region. With a legacy of promoting education that respects and integrates the rich cultural heritage and environmental significance of our surroundings, we are dedicated to nurturing future leaders and professionals who will contribute meaningfully to society.
             </p>
+            </div>
+            </div>
+            
             <p className='history1 mt-2'>
               At Smt. Manjira Devi University, we offer a diverse array of programs designed to provide excellence in education across various disciplines. From Science and Technology to Commerce and Management, from Yoga to Environmental Studies, and from Legal Studies to Naturopathy and Health Sciences, our curriculum is crafted to equip our students with not only theoretical knowledge but also practical skills that are relevant to the evolving global landscape.
             </p>

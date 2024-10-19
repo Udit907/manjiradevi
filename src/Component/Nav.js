@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import "./Nav.css";
 import TopNavBar from "./TopNav/TopNavbar";
 import Notnav from "./NotNav/Notnav";
@@ -53,10 +53,10 @@ function Nav() {
           <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
-                <Link className="nav-link active ms-4" aria-current="page" to="/">Home</Link>
+                <NavLink className={({ isActive }) =>`nav-link ms-4 ${isActive ? 'active' : ''}`} aria-current="page" to="/">Home</NavLink>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <NavLink
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
                   onMouseEnter={() => toggleDropdown('about')}
@@ -64,11 +64,11 @@ function Nav() {
                 >
                   About us {activeDropdown === 'about' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
 
-                </Link>
+                </NavLink>
                 {activeDropdown === 'about' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
                     <li><Link className="dropdown-item mt-2" to="/about">History</Link></li><hr className="hr1nav" />
-                    <li><Link className="dropdown-item mt-2" to="/vision">Vision and Mission</Link></li><hr className="hr1nav" />
+                    <li ><Link className="dropdown-item mt-2" to="/vision">Vision and Mission</Link></li><hr className="hr1nav" />
                     <li className="dropdown-submenu">
                       <Link className="dropdown-item mt-2" to="#" onMouseEnter={() => toggleSubDropdown('leadership')}>
                         Leadership

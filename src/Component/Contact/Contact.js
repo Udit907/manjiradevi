@@ -6,20 +6,19 @@ const ContactUs = () => {
     <div className="container mt-4">
       <h1 className="text-center mb-3">Get in Touch</h1>
       <div className="d-flex justify-content-center mb-4">
-            <a href="tel:+918006345557" className="btn mr-2" style={{ background: "orange", color: "white" }}>
-              <i className="fas fa-phone-alt rotate-icon"></i> Call us
-            </a>
-            <a href="https://wa.me/+918006345557" className="btn mr-2" style={{ background: "orange", color: "white" }}>
-              <i className="fab fa-whatsapp"></i> WhatsApp
-            </a>
-          </div>
+        <a href="tel:+918006345557" className="btn mr-2" style={{ background: "orange", color: "white" }}>
+          <i className="fas fa-phone-alt rotate-icon"></i> Call us
+        </a>
+        <a href="https://wa.me/+918006345557" className="btn mr-2" style={{ background: "orange", color: "white" }}>
+          <i className="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
       <div className="row">
         <div className="col-md-6 contact-info">
           <div>
             <h3>Campus</h3>
             <p>
-              Manjira Devi Campus Hintanu Dhanari, Uttarkashi<br />
-              Dehradun, Uttarakhand, INDIA
+              Smt. Manjira Devi University, Uttarkashi (श्रीमती मंजीरा देवी विश्वविद्यालय, उत्तरकाशी) Rukmani Nagar, Hitanu Dhanari, Dunda, Uttarkashi, Hitaru, Uttarakhand 249151
             </p>
             <hr />
             <h3>Phone Number</h3>
@@ -27,7 +26,7 @@ const ContactUs = () => {
             <hr />
             <h3>Email</h3>
             <p>
-              General: info@smdu.edu.in 
+              General: info@smdu.edu.in
               <br />
               Admissions: admissioncell@smdu.edu.in
             </p>

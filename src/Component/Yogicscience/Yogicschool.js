@@ -6,7 +6,7 @@ import Yogiccourses from './Yogiccourses';
 const Yogicschool = () => {
   return (
     <div>
-      <div className="container-fluid bnysimage">
+      {/* <div className="container-fluid bnysimage">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 mt-4">
@@ -18,7 +18,9 @@ const Yogicschool = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center"> School of Yogic Science & Naturopathy</h1>
+
       <div className="container-fluid mt-5">
         <div className="container p-5">
           <div className="row">

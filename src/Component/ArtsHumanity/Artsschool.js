@@ -6,7 +6,7 @@ import Library from '../Library/Library';
 const Artsschool = () => {
   return (
     <div>
-      <div className="container-fluid artsimage1">
+      {/* <div className="container-fluid artsimage1">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 mt-4">
@@ -18,7 +18,9 @@ const Artsschool = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center"> School Of Arts and Humanities</h1>
+
       <div className="container-fluid mt-5">
         <div className="container p-5">
           <div className="row">

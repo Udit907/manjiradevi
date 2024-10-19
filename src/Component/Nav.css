@@ -30,6 +30,10 @@
   margin-left: 10px;
 }
 
+.active{
+  color: #FD5F00;
+}
+
 
 .a1:hover {
   text-decoration: underline;
@@ -154,11 +158,12 @@
 }
 .navbar .dropdown-menu.no-arrow .dropdown-item {
   color: #000;
-  background-color: #fff;
+  background-color: white;
 }
-/* .navbar .dropdown-menu.no-arrow .dropdown-item:hover {
-  background-color: #f8f9fa;
-} */
+ .navbar .dropdown-menu.no-arrow .dropdown-item:hover {
+  background-color: #FD5F00;
+  color: white;
+} 
 /* .navbar .dropdown-menu {
   position: absolute;
 } */

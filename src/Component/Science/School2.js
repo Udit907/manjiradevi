@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function School2() {
   return (
     <div className="School1-page">
-         <div class="container-fluid science-image  ">
+         {/* <div class="container-fluid science-image  ">
  <div class="container">
     <div class="row">
        <div class="col-sm-12 mt-4 ">
@@ -14,9 +14,10 @@ function School2() {
   </div>
       </div>
     </div>
-</div>
+</div> */}
+<h1 className="mt-4 fs-2 text-success fw-bold text-center">School Of Science and Technology</h1>
      
-<div className="container-fluid mt-5">
+<div className="container-fluid">
 <div className="container p-5">
         <div
           className="row"
@@ -27,7 +28,7 @@ function School2() {
         >
           <br></br>
           <div className="col-md-6"></div>
-          <h2 className="mb-2 mt-4 nursingh">
+          <h2 className="mb-2 nursingh">
                 <span className="nursing-span">About </span>Us
               </h2>
           <div
