@@ -5,6 +5,61 @@
 .marq:hover{
   cursor: pointer;
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(9%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.bgMarquee{
+  background-color: #0D1128;
+}
+h5{
+  color: #FD5F00;
+  font-weight: 700;
+}
+.scroll-text p {
+  animation: scroll 130s linear infinite;
+  cursor: pointer;
+  animation-play-state: running; /* Ensure it runs by default */
+}
+
+.scroll-text p:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
+}
+.programDropDown{
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  position:absolute;
+  right: 0;
+}
+
+.degree a{
+  text-decoration: none;
+  font-size: small !important;
+  font-weight: 700 !important;
+}
+.degree a:hover{
+  color: #FD5F00 !important;
+}
+.cards{
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(24, 6, 90);
+  padding: 15px;
+  border-radius: 8px;
+  width: 105%;
+  height: 270px;
+  color: white;
+}
+.cardP{
+  overflow-y: auto;
+  height: 100%;
+}
 .bg1 {
   background-color: #FD5F00;
   color: white;

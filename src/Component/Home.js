@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import OurSchool from "../Component/OurSchool/OurSchool";
 import Program from "../Component/Program/Program";
@@ -16,38 +16,38 @@ import homeimg2 from "../images/125.jpg"
 
 
 function Home() {
-  const marqueeRef = useRef(null); // Create a reference to the marquee element
+  // const marqueeRef = useRef(null); // Create a reference to the marquee element
 
-  const handleMouseEnter = () => {
-    if (marqueeRef.current) {
-      marqueeRef.current.stop(); // Stop the marquee on hover
-    }
-  };
+  // const handleMouseEnter = () => {
+  //   if (marqueeRef.current) {
+  //     marqueeRef.current.stop(); // Stop the marquee on hover
+  //   }
+  // };
 
-  const handleMouseLeave = () => {
-    if (marqueeRef.current) {
-      marqueeRef.current.start(); // Resume the marquee when mouse leaves
-    }
-  };
+  // const handleMouseLeave = () => {
+  //   if (marqueeRef.current) {
+  //     marqueeRef.current.start(); // Resume the marquee when mouse leaves
+  //   }
+  // };
 
 
   return (
     <div>
-       <div
+      <div
         id="carouselExampleInterval"
         className="carousel slide"
         data-bs-ride="carousel"
-       
+
       >
         <div className="carousel-inner">
           <div className="carousel-item active" >
-            <img src={homeimg} className="d-block w-100" alt="..."  data-bs-interval="3000" />
+            <img src={homeimg} className="d-block w-100" alt="..." data-bs-interval="3000" />
           </div>
           <div className="carousel-item">
-            <img src={homeimg1} className="d-block w-100" alt="..."  data-bs-interval="1000" />
+            <img src={homeimg1} className="d-block w-100" alt="..." data-bs-interval="1000" />
           </div>
           <div className="carousel-item">
-            <img src={homeimg2} className="d-block w-100" alt="..."/>
+            <img src={homeimg2} className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -69,17 +69,34 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    <div className="bg-primary">
-      <div style={{ width: '80%', margin: '0 auto' }}>
+      {/* <div className="bg-primary" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '7vh' }}>
+      <div style={{ width: '80%', margin:"0 auto",textAlign: "center"}}>
        <marquee className="marq" ref={marqueeRef}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
-        <p className="text-white mt-3">"2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
+        onMouseLeave={handleMouseLeave}
+        >
+          <p className="text-white" style={{ margin: 0 }}>"2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
         "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
         </p>
        </marquee>
        </div>
-    </div>
+    </div> */}
+      <div className="bgMarquee" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '7vh' }}>
+        <div style={{ width: '80%', margin: "0 auto", overflow: "hidden", textAlign: "center" }}>
+          <div className="scroll-text" style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
+            <p className="text-white" style={{ margin: 0 }}>
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university",
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+              "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university"
+            </p>
+          </div>
+        </div>
+      </div>
 
 
       <div className="container mt-5 ww1">
@@ -116,71 +133,36 @@ function Home() {
               <span className="bg3">Academics</span> Notifications
             </h1>
             <div className="row cards">
-              <div className="col-md-4 ww  ">
-                <div className="card bf mt-2 p-3">
-                  <center>
-                    <h5 className="bf1 g-0 p-1">18-06-2024</h5>
-                  </center>
-                  <center>
-                    <p className="mt-3 bf3 ">
-                      Details Notifications Ph.D Entrance Examination session
-                      2024-25 <span className="new p-1">New</span>
-                    </p>
-                  </center>
-                  <center>
-                    {" "}
-                    <Link to="/phdpdf" class="btn  bf4">
-                      Open Pdf
-                    </Link>
-                  </center>
-                </div>
-              </div>
-              <div className="col-md-4 ww  ">
-                <div className="card bf mt-2 p-3 ">
-                  <center>
-                    <h5 className="bf1 g-0 p-1">18-06-2024</h5>
-                  </center>
-                  <center>
-                    <p className="mt-3 bf3 ">
-                      Details Notifications B.Ed Entrance Examination session
-                      2024-25 <span className="new p-1">New</span>
-                    </p>
-                  </center>
-                  <center>
-                    {" "}
-                    <Link to="/bedpdf" class="btn  bf4  ">
-                      Open Pdf
-                    </Link>
-                  </center>
-                </div>
-              </div>
-              <div className="col-md-4 ww  ">
-                <div className="card bf mt-2 p-3 ">
-                  <center>
-                    <h5 className="bf1 g-0 p-1">18-06-2024</h5>
-                  </center>
-                  <center>
-                    <p className="mt-3 bf3 ">
-                      Application Form Ph.D & B.Ed Entrance Examination session
-                      2024-25 <span className="new p-1">New</span>
-                    </p>
-                  </center>
-                  <center>
-                    {" "}
-                    <Link
-                      to="/entrancepdf"
-                      class="btn  bf4  "
-                    >
-                      Open Pdf
-                    </Link>
-                  </center>
-                </div>
-              </div>
-
-              <Link to="/academics" className="notification">
+              <div className="cardP">
+                <p>18-06-2024,  Details Notifications Ph.D Entrance Examination session
+                  2024-25 <span className="new p-1">New</span>
+                  <Link to="/phdpdf">
+                    Open Pdf
+                  </Link></p>
+                <br />
+                <p>18-06-2024, Details Notifications B.Ed Entrance Examination session
+                  2024-25 <span className="new p-1">New</span><Link to="/bedpdf">
+                    Open Pdf
+                  </Link> </p>
+                <br />
+                <p>18-06-2024, Details Notifications B.Ed Entrance Examination session
+                  2024-25 <span className="new p-1">New</span><Link to="/bedpdf">
+                    Open Pdf
+                  </Link> </p>
+                  <br />
+                  <p>18-06-2024, Details Notifications B.Ed Entrance Examination session
+                  2024-25 <span className="new p-1">New</span><Link to="/bedpdf">
+                    Open Pdf
+                  </Link> </p>
+                  <Link to="/academics" className="notification">
                 Click here for all Notifications
                 <i class="fa-solid fa-arrow-right p-1"></i>
               </Link>
+              </div> 
+              
+
+
+             
             </div>
           </div>
         </div>
