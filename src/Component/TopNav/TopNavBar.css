@@ -23,7 +23,7 @@
   font-size: 14px;
   font-weight: bold;
   width: 100%;
-  max-width: 300px;
+  max-width: 325px;
   margin-bottom: 0; /* Added margin for space between slider and links */
   position: relative; /* Ensure the arrows are positioned relative to this container */
 }

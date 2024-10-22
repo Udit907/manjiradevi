@@ -1,8 +1,10 @@
 .student-life {
+  width: 87%;
   text-align: center;
   padding: 20px;
   font-size: 17px;
-  background-color: #F6F7F9;
+  /* background-color: #F6F7F9; */
+  margin : 3px auto;
   font-family:'Arial', sans-serif;
 }
 
@@ -10,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 20px;
 }
 

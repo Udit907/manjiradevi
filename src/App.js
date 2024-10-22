@@ -87,7 +87,7 @@ import Visemsg from './Component/About/Visemsg';
 import Enquiryform from './Component/Admission/Enquiryform';
 import Placement from './Component/Placement/Placement';
 import { useEffect } from 'react';
-
+import ScrollToTop from './Component/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -97,6 +97,7 @@ function App() {
     <div>
       <Router>
         <Nav/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="about" element={<About/>}/>

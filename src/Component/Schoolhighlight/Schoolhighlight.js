@@ -69,11 +69,11 @@ const Schoolhighlight = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3">
               <div className="row">
-                <h2 className="hightlight-school2 mt-1">
+                <h3 className="hightlight-school2">
                   Here’s what you can avail yourself at MANJIRA
-                </h2>
+                </h3>
                 <div className="col-6 col-md-4 high2 mt-3 ms-2 me-1 mb-4">
                   <h1 className="text-center high4">
                     <i className="bi bi-people-fill promise-bg"></i>
@@ -87,7 +87,7 @@ const Schoolhighlight = () => {
                   <h3 className="high3 text-white mb-0 p-1">Infrastructure</h3>
                 </div>
               </div>
-              <div className="row mt-2">
+              <div className="row mt-1">
                 <div className="col-6 col-md-4 high2 mt-3 ms-2 me-1 mb-4">
                   <h1 className="text-center high4">
                     <i className="bi bi-reception-4 promise-bg"></i>
@@ -101,7 +101,7 @@ const Schoolhighlight = () => {
                   <h3 className="high3 text-white mb-0 p-1">Networking</h3>
                 </div>
               </div>
-              <div className="row mt-2">
+              <div className="row mt-1">
                 <div className="col-6 col-md-4 high2 mt-3 ms-2 me-1 mb-4">
                   <h1 className="text-center high4">
                     <i className="bi bi-person-lines-fill promise-bg"></i>
