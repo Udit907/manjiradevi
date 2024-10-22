@@ -111,7 +111,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <div className="footer-copy">
                     <p>&copy; 2024 by Manjira Devi University, All Rights Reserved.</p>
-                    <p>Developed by Upscale Technologies, Manjira Devi University.</p>
+                    <p>Developed by CodeFusion Technologies, Manjira Devi University.</p>
                 </div>
                 <div className="footer-admissions">
                     <a href="#">Admissions Open 2024</a>

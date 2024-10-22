@@ -19,8 +19,8 @@ const Notnav = () => {
         <div className="row mb-0">
           <div className="col-md-4 mt-1 ">
             <div className="row">
-              <div className="col-md-3">
-            <img src={Logo} height="110px" alt="Manjira Logo" />
+              <div className="col-md-3 mt-1 mb-2">
+            <img src={Logo} height="95px" alt="Manjira Logo" />
               </div>
               <div className="col-md-9 d-flex align-items-center justify-content-center ">
             <span className="fs-3 fw-bold custom-text-color" >Smt. Manjira Devi <span className="custom-color">University</span></span>

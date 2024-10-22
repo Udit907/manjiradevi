@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 import { Link } from "react-router-dom";
-import Gallery from '../Gallery/Gallery';
+// import Gallery from '../Gallery/Gallery';
 
 const About = () => {
   return (

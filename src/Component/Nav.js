@@ -57,7 +57,10 @@ function Nav() {
           <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
-                <Link className="nav-link ms-4" aria-current="page" to="/">Home</Link>
+                    <Link className="nav-link ms-4" aria-current="page" to="/" onMouseEnter={()=>{
+                      setActiveDropdown(false)
+                      setProgramDropDown(false)
+                      }}>Home</Link>
               </li>
               <li className="nav-item dropdown">
                 <Link
@@ -344,10 +347,10 @@ function Nav() {
                 )}
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white ms-4" to="/placement">Placements</Link>
+                <Link className="nav-link text-white ms-4" to="/placement" onMouseEnter={()=>setActiveDropdown(null)}>Placements</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white ms-4" to="/gallery1">Gallery</Link>
+                <Link className="nav-link text-white ms-4" to="/gallery1" onMouseEnter={()=>setActiveDropdown(null)}>Gallery</Link>
               </li>
               <li className="nav-item dropdown">
                 <Link
@@ -390,7 +393,7 @@ function Nav() {
                 )}
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white ms-4" to="/contact">Contact Us</Link>
+                <Link className="nav-link text-white ms-4" to="/contact" onMouseEnter={()=>setActiveDropdown(null)}>Contact Us</Link>
               </li>
             </ul>
           </div>
