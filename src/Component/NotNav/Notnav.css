@@ -33,10 +33,11 @@
     font-size: medium;
     font-weight: 500;
     border-radius: 7px;
+    border: none;
     padding: 8px 16px !important;
   }
   .lo1:hover{
-    color: white;
+    background-color: green;
   }
   
   .cl {

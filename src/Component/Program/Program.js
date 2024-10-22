@@ -41,15 +41,15 @@ function Program() {
   };
 
   return (
-    <div className="container-fluid bd mb-4">
-      <div className="dbuu-container">
+    <div className="container-fluid bd">
+      <div className='dbuu-container'> 
         <div className="choose-programme">
           <h2>CHOOSE YOUR <span className="bd3">PROGRAMME</span></h2>
         </div>
         <div className="dbuu-programmes d-flex flex-wrap justify-content-center align-items-start">
           <div className="programme-types">
             <ul>
-              <li className={`bd2 text-white text-center ${selectedProgram === 'UNDERGRADUATE' ? 'active' : ''}`} onClick={() => handleProgramClick('UNDERGRADUATE')}>UNDERGRADUATE</li>
+              <li className={` ${selectedProgram === 'UNDERGRADUATE' ? 'active' : ''}`} onClick={() => handleProgramClick('UNDERGRADUATE')}>UNDERGRADUATE</li>
               <li className={`${selectedProgram === 'POSTGRADUATE' ? 'active' : ''}`} onClick={() => handleProgramClick('POSTGRADUATE')}>POSTGRADUATE</li>
               <li className={`${selectedProgram === 'DIPLOMA' ? 'active' : ''}`} onClick={() => handleProgramClick('DIPLOMA')}>DIPLOMA</li>
               <li className={`${selectedProgram === 'DOCTORATE' ? 'active' : ''}`} onClick={() => handleProgramClick('DOCTORATE')}>DOCTORATE</li>

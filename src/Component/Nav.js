@@ -57,18 +57,21 @@ function Nav() {
           <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
-                <NavLink className={({ isActive }) =>`nav-link ms-4 ${isActive ? 'active' : ''}`} aria-current="page" to="/">Home</NavLink>
+                <Link className="nav-link ms-4" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item dropdown">
-                <NavLink
+                <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onMouseEnter={() => toggleDropdown('about')}
+                  onMouseEnter={() =>{ toggleDropdown('about');
+                    setProgramDropDown(false)
+                  }
+                  }
                   to="/" // Link to the page
                 >
                   About us {activeDropdown === 'about' ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
 
-                </NavLink>
+                </Link>
                 {activeDropdown === 'about' && (
                   <ul className="dropdown-menu no-arrow mt-2" style={{ columns: '1' }}>
                     <li><Link className="dropdown-item mt-2" to="/about">History</Link></li><hr className="hr1nav" />
@@ -110,7 +113,11 @@ function Nav() {
                 )}
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white ms-4" onMouseEnter={()=>setProgramDropDown(true)}>Programmes</Link>
+                <Link className="nav-link text-white ms-4" onMouseEnter={()=>{
+                  setProgramDropDown(true)
+                  setActiveDropdown(null)
+                }
+                } >Programmes</Link>
                {programDropDown &&  <div className="programDropDown" >
                       <div className="row">
                         <div className="col-md-3">
@@ -244,7 +251,10 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onMouseEnter={() => toggleDropdown('academics')}
+                  onMouseEnter={() => {
+                    toggleDropdown('academics')
+                    setProgramDropDown(false)
+                  }}
                   aria-expanded={activeDropdown === 'academics'}
                   to="/"
                 >
@@ -315,7 +325,11 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onMouseEnter={() => toggleDropdown('admission')}
+                  onMouseEnter={() => {
+                    toggleDropdown('admission')
+                    setProgramDropDown(false)
+                  }
+                }
                   aria-expanded={activeDropdown === 'admission'}
                   to="/"
                 >
@@ -339,7 +353,11 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onMouseEnter={() => toggleDropdown('events')}
+                  onMouseEnter={() =>{
+                     toggleDropdown('events')
+                     setProgramDropDown(false)
+                    }
+                }
                   aria-expanded={activeDropdown === 'events'}
                   to="/"
                 >
@@ -356,7 +374,10 @@ function Nav() {
                 <Link
                   className="nav-link text-white ms-4 dropdown-toggle-no-arrow"
                   role="button"
-                  onMouseEnter={() => toggleDropdown('career')}
+                  onMouseEnter={() => {
+                    toggleDropdown('career')
+                    setProgramDropDown(false)
+                  }}
                   aria-expanded={activeDropdown === 'career'}
                   to="/lifemanjira" // Link to the Career page
                 >

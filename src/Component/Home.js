@@ -16,21 +16,6 @@ import homeimg2 from "../images/125.jpg"
 
 
 function Home() {
-  // const marqueeRef = useRef(null); // Create a reference to the marquee element
-
-  // const handleMouseEnter = () => {
-  //   if (marqueeRef.current) {
-  //     marqueeRef.current.stop(); // Stop the marquee on hover
-  //   }
-  // };
-
-  // const handleMouseLeave = () => {
-  //   if (marqueeRef.current) {
-  //     marqueeRef.current.start(); // Resume the marquee when mouse leaves
-  //   }
-  // };
-
-
   return (
     <div>
       <div
@@ -69,20 +54,8 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      {/* <div className="bg-primary" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '7vh' }}>
-      <div style={{ width: '80%', margin:"0 auto",textAlign: "center"}}>
-       <marquee className="marq" ref={marqueeRef}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        >
-          <p className="text-white" style={{ margin: 0 }}>"2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
-        "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university", "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English,smt Manjira Devi university"
-        </p>
-       </marquee>
-       </div>
-    </div> */}
       <div className="bgMarquee" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '7vh' }}>
-        <div style={{ width: '80%', margin: "0 auto", overflow: "hidden", textAlign: "center" }}>
+        <div style={{ width: '90%', margin: "0 auto", overflow: "hidden", textAlign: "center" }}>
           <div className="scroll-text" style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
             <p className="text-white" style={{ margin: 0 }}>
               "2-day National Seminar on Changing Role of Academic Libraries and Literature in the light of NEP2020 by Department of Library and Information Science and Department of English, smt Manjira Devi university",
@@ -168,7 +141,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="container-fluid mt-5 about mb-5">
+      <div className="container-fluid mt-5 about">
         <div className="row p-5">
           <div className="col-md-2"></div>
           <div className="col-md-8" data-aos="fade-left" data-Aos-duration="1600">

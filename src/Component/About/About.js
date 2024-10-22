@@ -68,7 +68,7 @@ In summary,<span className='history-span'> Smt. Manjira Devi University</span> e
 </div>
 </div>
 </div>
-      <div className="container-fluid mt-5 about mb-5">
+      <div className="container-fluid mt-5 about">
         <div className="row p-5">
           <div className="col-md-2"></div>
           <div className="col-md-8">

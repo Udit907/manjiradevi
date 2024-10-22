@@ -40,7 +40,8 @@ const Notnav = () => {
           </div>
           <div className="col-md-3 lo">
             
-          <button type="button" class="btn btn-outline-warning"><Link to="/enquiryform" className=" p-2 lo1 " >Enquiry Form</Link></button>
+          {/* <Link to="/enquiryform"  ><button type="button" class="btn btn-outline-warning" className=" p-2 lo1 ">Enquiry Form</button></Link> */}
+          <Link to="/enquiryform" class="btn bgd" style={{fontWeight:"bold"}}> Enquiry Form </Link>
             <h6 className="ml-2 cl mt-2">Click here Fee payment</h6>
           </div>
           <div className="col-md-2">

@@ -101,7 +101,7 @@ const OurSchool = () => {
 
   return (
     <div>
-    <div className="our-schools-slider mb-4 mt-5">
+    <div className="our-schools-slider ">
       <h2 className="slider-title">Our Schools</h2>
       <p className="slider-subtitle">THE RIGHT CHOICE IS RIGHT IN FRONT OF YOU</p>
       <Slider {...settings}>
@@ -110,7 +110,8 @@ const OurSchool = () => {
             <img src={slide.image} alt={slide.title} className="slide-image" />
             <div className="slide-content">
               <h3 className="slide-title">{slide.title}</h3>
-              <Link to="/school" className="slide-button">Know more</Link>
+              {/* <Link to="/school" className="slide-button">Know more</Link> */}
+              <Link class="btn bgd" to="/school">Know more</Link>
             </div>
           </div>
         ))}

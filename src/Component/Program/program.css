@@ -4,22 +4,27 @@
   overflow: hidden;
 }
 
-.bd2 {
+/* .bd2 {
   background-color: #FD5F00;
   color: white;
-}
+} */
 
 .bd3 {
   color: #FD5F00;
 }
 
+.active{
+  background-color: #FD5F00;
+  font-weight: 700;
+  color: white !important;
+}
 .dbuu-container {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #f4f4f4;
-  border-radius: 10px; /* Rounded corners for a softer look */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  /* border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  */
 }
 
 .choose-programme h2 {
@@ -42,7 +47,7 @@
   flex: 1;
   background-color: #fff;
   padding: 20px;
-  border-radius: 9px;
+  border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-width: 250px;
   transition: transform 0.3s; /* Smooth hover effect */
@@ -67,17 +72,11 @@
   border-bottom: 1px solid #ddd;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.programme-types li:hover {
-  background-color: #003366; /* DBUU primary color */
-  color: #fff;
-}
-
 .programme-sections {
   flex: 3;
   background-color: #fff;
   padding: 9px;
-  border-radius: 9px;
+  border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   /* max-width: 270px; */
