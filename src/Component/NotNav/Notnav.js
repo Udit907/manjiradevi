@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import PopupForm from './PopupForm';  // Ensure this file exists and the name is correct
+// import PopupForm from './PopupForm';  // Ensure this file exists and the name is correct
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Notnav.css";
 import Logo from "../../images/logo.jpeg"
 
 const Notnav = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
 
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
+  // const togglePopup = () => {
+  //   setShowPopup(!showPopup);
+  // };
 
  
   return (
