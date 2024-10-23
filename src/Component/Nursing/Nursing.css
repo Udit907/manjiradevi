@@ -20,7 +20,6 @@
     background-repeat: no-repeat;
   }
   .library-heading{
-    text-align: center;
   }
   .bpharmaimage1 {
     background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/bpharma.jpg");
