@@ -18,7 +18,8 @@ function BscAgr() {
            <br></br>
           <div className="col-md-0"></div>
           <h2 className="mb-0 mt-2 nursingh">
-                <span className="nursing-span">Course </span>Overview
+          <span>B.Sc (Agricultural)  - </span>
+                <span className="nursing-spans">Course </span>Overview
               </h2>
           <div
             className="col-md-6 text-column"
@@ -41,7 +42,7 @@ function BscAgr() {
               </div>
         &emsp;&emsp; <div className="col-md-4 image-column"><br/><br/><br/>
             <img
-              style={{ height: "65%" }}
+             style={{width:"520px",height:"440px",borderRadius:"8px"}}
               src="/science7.jpeg"
               alt="School Vision"
             />

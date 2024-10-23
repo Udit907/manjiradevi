@@ -18,9 +18,11 @@ function Bsc() {
         >
           <br></br>
           <div className="col-md-0"></div>
-          <h2 className="mb-2 mt-4 nursingh">
-                <span className="nursing-span">Course </span>Overview
+          <h2 className="nursingh">
+            <span>B.Sc - </span>
+                <span className="nursing-spans">Course </span>Overview
               </h2>
+              
           <div
             className="col-md-6 text-column"
             style={{ fontSize: "20px",textAlign:"justify",fontFamily:"serif" }}
@@ -34,14 +36,14 @@ function Bsc() {
               <br/>
               <span className="nursing-span">Career Opportunities: </span>
                 <span>Depends on the specific stream chosen: <br/>
-                 <b>1.PCM:</b> Careers in engineering, technology, research, analytics, data science, finance, etc.<br/>
-                 <b>2.PCB:</b> Opportunities in medical sciences, healthcare, biotechnology, pharmaceuticals, research, etc.<br/>
-                 <b>3.ZBC:</b> Careers in zoology, botany, environmental sciences, wildlife biology, forestry, etc.<br/>
-                 <b>4.CS:</b> Paths in software development, information technology, cybersecurity, data analytics, artificial intelligence, etc.</span><br/>
+                 <span className="span">1.PCM:</span> Careers in engineering, technology, research, analytics, data science, finance, etc.<br/>
+                 <span className="span">2.PCB:</span> Opportunities in medical sciences, healthcare, biotechnology, pharmaceuticals, research, etc.<br/>
+                 <span className="span">3.ZBC:</span> Careers in zoology, botany, environmental sciences, wildlife biology, forestry, etc.<br/>
+                 <span className="span">4.CS:</span> Paths in software development, information technology, cybersecurity, data analytics, artificial intelligence, etc.</span><br/>
               </div>
           &emsp;&emsp;<div className="col-md-4 image-column"><br/><br/>
             <img
-              style={{ height: "50%" }}
+            style={{width:"520px",height:"440px",borderRadius:"8px"}}
               src="/bsc.jpg"
               alt="School Vision"
             />

@@ -13,6 +13,12 @@
   width: 100%;
   background-repeat: no-repeat;
 }
+.nursing-span{
+  color: #FD5F00;
+  font-weight: 700;
+  font-size: larger;
+  margin-top: 15px;
+}
 .phdartsimage {
   background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/arts3.jpg");
   background-size: cover;
