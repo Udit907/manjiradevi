@@ -88,14 +88,15 @@
 @media (max-width: 768px) {
   .containerfluid {
     justify-content: center;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    flex-wrap: wrap;
+    gap: 15px; /* Ensure wrapping on smaller screens */
   }
 
   .phdnotice {
     padding: 7px;
    margin-left: 35px;
     text-align: center;
-    background-color: gray;
+    /* background-color: gray; */
   }
 
   .topnav {

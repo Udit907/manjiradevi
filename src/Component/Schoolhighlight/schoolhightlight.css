@@ -16,7 +16,7 @@
 }
 
 .hightlight-school2 {
-  font-size: 26px;
+  font-size: 24px;
   color: #0D1128;
   font-weight: bold;
   font-family: serif;
@@ -159,14 +159,6 @@
   }
   .high1{
     max-width:500px;
-  }
-  .hightlight-school1{
-    font-size: 30px;
-    margin-left: -40px;
-  }
-  .hightlight-school2{
-    font-size: 30px;
-    margin-left: -40px;
   }
   .high2{
     width: 103px;

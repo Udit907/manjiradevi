@@ -56,6 +56,13 @@ h5{
   height: 270px;
   color: white;
 }
+
+@media only screen and (max-width: 768px){
+.cards{
+  width: 100%;
+
+}
+}
 .cardP{
   overflow-y: auto;
   height: 100%;

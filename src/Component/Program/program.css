@@ -145,7 +145,7 @@
     font-size: 24px;
   }
 .programme-types{
-  min-width: 270px;
+  min-width: 335px;
 }
   .programme-types li {
     font-size: 16px;
@@ -161,11 +161,11 @@
   }
 
   .programme-sections {
-    padding: 10px;
-    max-width: 270px;
+    /* padding: 10px; */
+    max-width: 335px;
   }
 
-  .programme-types {
-    padding: 10px;
-  }
+ .programme-section li a{
+  line-break: anywhere;
+ }
 }
