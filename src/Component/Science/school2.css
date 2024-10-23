@@ -220,6 +220,7 @@
   
   .row {
     margin: 0;
+    /* display: block; */
   }
 
   .col-md-6 {
