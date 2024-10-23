@@ -15,7 +15,8 @@ function Bca() {
         >
           <div className="col-md-0"></div>
           <h2 className="mb-2 mt-4 nursingh">
-            <span className="nursing-span">Course </span>Overview
+          <span>BCA - </span>
+            <span className="nursing-spans">Course </span>Overview
           </h2>
           <div
             className="col-md-6 text-column"
@@ -48,8 +49,8 @@ function Bca() {
           <div className="col-md-4 image-column">
             <br /><br />
             <img
-              className="hover-image"
-              style={{ height: "50%" }}
+              className=""
+              style={{width:"520px",height:"440px",borderRadius:"8px"}}
               src="/science7.jpeg"
               alt="School Vision"
             />

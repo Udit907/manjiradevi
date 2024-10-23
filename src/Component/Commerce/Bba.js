@@ -16,14 +16,15 @@ function Bba() {
            <br></br>
           <div className="col-md-0"></div>
           <h2 className="mb-0 mt-2 nursingh">
-                <span className="nursing-span">Course </span>Overview
+          <span>BBA - </span>
+                <span className="nursing-spans">Course </span>Overview
               </h2>
           <div
             className="col-md-6 text-column"
             style={{ fontSize: "20px",textAlign:"justify",fontFamily:"serif" }}
           ><br/>
-          1.<span className="nursing-span">Subjects:</span> Management Principal, Business Economics, Organizational Behavior, Marketing Management, Financial Management, Human Resource Management, Operations Management.<br></br>
-          2. <span className="nursing-span">Skills Developed: </span>
+         <span className="nursing-span">Subjects:</span> Management Principal, Business Economics, Organizational Behavior, Marketing Management, Financial Management, Human Resource Management, Operations Management.<br></br>
+       <span className="nursing-span">Skills Developed: </span>
           Leadership, communication, problem-solving, and strategic thinking.<br></br>
           
                 <span className="nursing-span">Duration: </span>
@@ -41,7 +42,7 @@ function Bba() {
               </div>
         &emsp;&emsp; <div className="col-md-4 image-column"><br/><br/><br/>
             <img
-              style={{ height: "65%" }}
+          style={{width:"520px",height:"440px",borderRadius:"8px"}}
               src="/science7.jpeg"
               alt="School Vision"
             />

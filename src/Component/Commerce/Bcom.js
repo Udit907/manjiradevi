@@ -17,16 +17,17 @@ function Bcom() {
            <br></br>
           <div className="col-md-0"></div>
           <h2 className="mb-0 mt-2 nursingh">
-                <span className="nursing-span">Course </span>Overview
+          <span>B.Com - </span>
+                <span className="nursing-spans">Course </span>Overview
               </h2>
           <div
             className="col-md-6 text-column"
             style={{ fontSize: "20px",textAlign:"justify",fontFamily:"serif" }}
           ><br/>
-          1. <span className="nursing-span">Subjects: </span>
+         <span className="nursing-span">Subjects: </span>
             Financial Accounting, Business Law, Economics, Taxation, Auditing, Cost Accounting, Business Management.
           <br></br>
-          2. <span className="nursing-span">Skills Developed: </span>
+         <span className="nursing-span">Skills Developed: </span>
           Analytical skills, financial literacy, business acumen, and understanding of commercial and economic principles.<br></br>
           
                 <span className="nursing-span">Duration: </span>
@@ -43,7 +44,7 @@ function Bcom() {
               </div>
         &emsp;&emsp; <div className="col-md-4 image-column"><br/><br/><br/>
             <img
-              style={{ height: "65%" }}
+             style={{width:"520px",height:"360px",borderRadius:"8px"}}
               src="/science7.jpeg"
               alt="School Vision"
             />

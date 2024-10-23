@@ -5,19 +5,7 @@ import Artscourses from './Artscourses';
 const BaArts = () => {
   return (
     <div>
-      <div className="container-fluid baartsimage">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 mt-4">
-              <center>
-                <h2 className="text-white display-3 artssmt " >
-                Bachelor of Arts (B.A.)
-                </h2>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2 className='text-center mt-4 ' style={{fontSize:"45px",color:"orange"}}>Bachelor of Arts (B.A.)</h2>
       <div className="container-fluid mt-5 nursingbg2">
         <div className="container p-5">
           <div className="row">
@@ -37,20 +25,17 @@ const BaArts = () => {
       </div>
       <div className="container mt-5">
       <h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
-        <div className="row" style={{ border: "2px", borderRadius: "20px", boxShadow: "10px 10px 20px rgb(240, 117, 3)" }}>
-          <div className="col-md-0"></div>
+        <div className="row" >
           <div className="col-md-6"><br />
             <p className="nursing-p">
             A 3-year undergraduate program offering a broad education in subjects like English, History, and Political Science, with options for electives and skill enhancement courses. Career opportunities include civil services, journalism, teaching, and public administration.
             </p>
-            <h3 className="library-heading">Duration</h3>
-            <p><h6 className="nursing-p">3 yrs. (6 Semesters)</h6></p><br />
-            <h3 className="library-heading">Eligibility Criteria (Qualifying Exam)</h3>
-            
-            <p className='nursing-p'>
-            <span className='history-span '>	•	</span>	Passed 10+2/Intermediate in any discipline</p> 
-            <p className='nursing-p'>
-            <span className='history-span '>	•	Subjects:	</span>	  English, Hindi, Sanskrit, History, Political Science, Sociology, Education, Economics.</p>
+            <span className="nursing-span">Duration: </span>
+            <span>3 Years (6 Semesters)</span><br/>
+            <span className="nursing-span">Eligibility: </span>
+            Passed 10+2/Intermediate in any discipline <br />
+            <span className="nursing-span">Career Opportunities: </span>
+            <span className='history-span '>	•	Subjects:	</span>	  English, Hindi, Sanskrit, History, Political Science, Sociology, Education, Economics
             <h3 className='library-heading'>	Career Opportunities</h3>
 <p className='nursing-p'>
 •	Journalist<br/>
@@ -63,8 +48,8 @@ const BaArts = () => {
 </p>
             
           </div>
-          <div className="col-md-4 image-column mt-5"><br />
-            <img style={{ height: "100%" }} src="/vision.png" alt="School Vision" />
+          <div className="col-md-5  mt-5"><br />
+            <img style={{width:"520px",height:"440px",borderRadius:"8px"}}s src="/vision.png" alt="School Vision" />
           </div>
         </div>
       </div>

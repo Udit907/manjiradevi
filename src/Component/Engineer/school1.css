@@ -24,16 +24,16 @@
   text-align: justify;
 }
 
-.image-column {
+/* .image-column {
   text-align: center;
   margin-top: 20px;
-}
+} */
 
-.image-column img {
+/* .image-column img {
   width: 100%;
   height: auto;
-  max-height: 400px; /* Limit the height to prevent large images */
-}
+  max-height: 400px; 
+} */
 
 /* Card styles */
 .card1 {
