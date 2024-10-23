@@ -186,7 +186,7 @@
   border: 2px solid #ffc107; /* Example border color */
   text-align: center;
   font-size: 18px;
-  cursor: pointer;
+  cursor: default;
   transition: background-color 0.3s;
 }
 
@@ -206,7 +206,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 60%;
+  width: auto;
+  height: auto;
 }
 
 .School1-page .info-sections {

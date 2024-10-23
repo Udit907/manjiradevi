@@ -54,7 +54,7 @@ function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
+         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li className="nav-item">
                     <Link className="nav-link ms-4" aria-current="page" to="/" onMouseEnter={()=>{
@@ -208,9 +208,9 @@ function Nav() {
                            <div className="diplomaDetails">
                             <span style={{fontSize:"14px"}}>School of Engineering</span>
                             <div className="degree" style={{display:"grid"}} >
-                            <Link to="/engineer" onClick={()=>setProgramDropDown(false)}>Diploma in CE</Link>
-                            <Link to="/mechanic" onClick={()=>setProgramDropDown(false)}>Diploma in CE</Link>
-                            <Link to="/cse" onClick={()=>setProgramDropDown(false)}>Diploma in CE</Link>
+                            <Link to="/engineer" onClick={()=>setProgramDropDown(false)}>Diploma - Civil Engineering</Link>
+                            <Link to="/mechanic" onClick={()=>setProgramDropDown(false)}>Diploma - Mechanical Engineering</Link>
+                            <Link to="/cse" onClick={()=>setProgramDropDown(false)}>Diploma - Computer Science & Engineering</Link>
                            </div>
                             <span style={{fontSize:"14px"}}>School of Science And Technology</span>
                             <div className="degree" style={{display:"grid"}} >
