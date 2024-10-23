@@ -5,58 +5,42 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 function Bca() {
   return (
     <div className="school1-page">
-      <div className="container mt-3">
-        <div
-          className="row"
-          style={{
-            border: "2px",
-            borderRadius: "20px",
-          }}
-        >
+      <div className='container mt-5'>
+        <h1 className='library-heading'><span>BCA - </span>	Course <span className='library-span'>Overview</span></h1>
+        <div className="row" style={{
+          border: "2px",
+          borderRadius: "20px",
+        }}>
           <div className="col-md-0"></div>
-          <h2 className="mb-2 mt-4 nursingh">
-          <span>BCA - </span>
-            <span className="nursing-spans">Course </span>Overview
-          </h2>
-          <div
-            className="col-md-6 text-column"
-            style={{ fontSize: "20px", textAlign: "justify", fontFamily: "serif" }}
-          >
+          <div className="col-md-7"><br></br>
+            <p className='nursing-p'>
             Focuses on computer applications, software development, programming languages, database management, and computer networks. Includes practical training in software development and applications.
-            <br />
-            <span className="nursing-span">Duration: </span>
-            <span>3 Years (6 Semesters)</span>
-            <br />
-            <span className="nursing-span">Eligibility: </span> Completion of higher secondary education (10+2) with Mathematics as a subject. Minimum Aggregate Score Requirement: Gen/OBC/Minority-50 % and SC/ST- 45 %.
-            <br />
-            <span className="nursing-span">Career Opportunities: </span>
-            <span>
-              <br />
-              <b>1.Software developer,</b>
-              <br />
-              <b>2.Web developer, </b>
-              <br />
-              <b>3.System analyst, </b>
-              <br />
-              <b>4.Database administrator,</b>
-              <br />
-              <b>5.Network administrator,</b>
-              <br />
-              <b>6.IT consultant.</b>
-            </span>
-            <br /><br />
+            </p>
+            <h3 className='library-heading'>Duration</h3>
+            <p><h6 className='nursing-p'>3 Years (6 Semesters)</h6></p>
+            <h3 className='library-heading'>Eligibility Criteria</h3>
+            <p className='nursing-p'>
+            Completion of higher secondary education (10+2) with Mathematics as a subject. Minimum Aggregate Score Requirement: Gen/OBC/Minority-50 % and SC/ST- 45 %.
+            </p>
+            <h3 className='library-heading'>Career Opportunities</h3>
+            <p className='nursing-p'>
+              • Software developer<br />
+              •	Web developer<br />
+              •	System analyst<br />
+              •	Database administrator<br />
+              •	Network administrator<br />
+              •	IT consultant<br />
+            </p>
           </div>
-          <div className="col-md-4 image-column">
-            <br /><br />
+          <div className="col-md-5 image-column"><br />
             <img
-              className=""
-              style={{width:"520px",height:"440px",borderRadius:"8px"}}
-              src="/science7.jpeg"
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
+              src="/vision.png"
               alt="School Vision"
             />
           </div>
-          <div className="col-md-1"></div>
         </div>
+
       </div>
     </div>
   );

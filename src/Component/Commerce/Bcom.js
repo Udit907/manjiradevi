@@ -5,55 +5,41 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 function Bcom() {
   return (
     <div className="School1-page">
-     
-      <div className="container mt-2">
-        <div
-          className="row"
-          style={{
-            border: "2px",
-            borderRadius: "20px",
-          }}
-        >
-           <br></br>
+      <div className='container mt-5'>
+        <h1 className='library-heading'><span>B.Com - </span>	Course <span className='library-span'>Overview</span></h1>
+        <div className="row" style={{
+          border: "2px",
+          borderRadius: "20px",
+        }}>
           <div className="col-md-0"></div>
-          <h2 className="mb-0 mt-2 nursingh">
-          <span>B.Com - </span>
-                <span className="nursing-spans">Course </span>Overview
-              </h2>
-          <div
-            className="col-md-6 text-column"
-            style={{ fontSize: "20px",textAlign:"justify",fontFamily:"serif" }}
-          ><br/>
-         <span className="nursing-span">Subjects: </span>
-            Financial Accounting, Business Law, Economics, Taxation, Auditing, Cost Accounting, Business Management.
-          <br></br>
-         <span className="nursing-span">Skills Developed: </span>
-          Analytical skills, financial literacy, business acumen, and understanding of commercial and economic principles.<br></br>
-          
-                <span className="nursing-span">Duration: </span>
-                <span> 3 Years (6 Semesters).</span><br/>
-                <span className="nursing-span">Eligibility: </span> 10+2 OR equivalent in any discipline  
-              <br/>
-              <span className="nursing-span">Career Opportunities: </span>
-                <span> <br/>
-                 <b>1.Accountant  </b> <br/>
-                 <b>2.Financial Analyst</b><br/>
-                 <b>3.Business Consultant</b><br/>
-                 <b>4.Auditor</b>
-                 <b>5.Tax Advisor</b></span><br/><br/>
-              </div>
-        &emsp;&emsp; <div className="col-md-4 image-column"><br/><br/><br/>
+          <div className="col-md-7"><br></br>
+            <p className='nursing-p'>
+            Focuses on computer applications, software development, programming languages, database management, and computer networks. Includes practical training in software development and applications.
+            </p>
+            <h3 className='library-heading'>Duration</h3>
+            <p><h6 className='nursing-p'>3 Years (6 Semesters)</h6></p>
+            <h3 className='library-heading'>Eligibility Criteria</h3>
+            <p className='nursing-p'>
+            10+2 OR equivalent in any discipline  
+            </p>
+            <h3 className='library-heading'>Career Opportunities</h3>
+            <p className='nursing-p'>
+              • Accountant<br />
+              •	Financial Analyst<br />
+              •	Business Consultant<br />
+              •	Auditor<br />
+              •	Tax Advisor<br />
+            </p>
+          </div>
+          <div className="col-md-5 image-column"><br />
             <img
-             style={{width:"520px",height:"360px",borderRadius:"8px"}}
-              src="/science7.jpeg"
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
+              src="/vision.png"
               alt="School Vision"
             />
           </div>
-          <div className="col-md-1"></div>
         </div>
-        <br></br><br></br>
-        
-        
+
       </div>
       
     </div>

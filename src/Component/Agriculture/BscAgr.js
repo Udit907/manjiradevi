@@ -5,54 +5,44 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 function BscAgr() {
   return (
     <div className="School1-page">
-
-     
-      <div className="container mt-2">
-        <div
-          className="row"
-          style={{
-            border: "2px",
-            borderRadius: "20px",
-          }}
-        >
-           <br></br>
+      <div className='container mt-5'>
+        <h1 className='library-heading'><span>B.Sc (Agricultural) - </span>	Course <span className='library-span'>Overview</span></h1>
+        <div className="row" style={{
+          border: "2px",
+          borderRadius: "20px",
+        }}>
           <div className="col-md-0"></div>
-          <h2 className="mb-0 mt-2 nursingh">
-          <span>B.Sc (Agricultural)  - </span>
-                <span className="nursing-spans">Course </span>Overview
-              </h2>
-          <div
-            className="col-md-6 text-column"
-            style={{ fontSize: "20px",textAlign:"justify",fontFamily:"serif" }}
-          ><br/>
+          <div className="col-md-7"><br></br>
+            <p className='nursing-p'>
          Covers agronomy, soil science, plant breeding and genetics, agricultural economics, farm management, and agricultural engineering. Includes practical training in agricultural practices and fieldwork.<br></br>
-                <span className="nursing-span">Duration: </span>
-                <span> 4 Years (8 Semesters).</span><br/>
-                <span className="nursing-span">Eligibility: </span>Intermediate in Agri. Science/PCB/PCM/PCMB. Minimum Aggregate Score Requirement: Gen/OBC/Minority-50 % and SC/ST- 45 %<br/>
-                <span> 
-                <span className="nursing-span">Career Opportunities: </span>
-                <span> <br/>
-                 <b>1.Agricultural Officer,  </b> <br/>
-                 <b>2.Farm Manager, </b><br/>
-                 <b>3.Crop Consultant,</b><br/>
-                 <b>4.Agricultural Researcher,</b><br/>
-                 <b>5.Extension Officer, </b><br/>
-                 <b>6.Agribusiness Manager</b></span><br/><br/>
-            </span><br/>
-              </div>
-        &emsp;&emsp; <div className="col-md-4 image-column"><br/><br/><br/>
+            </p>
+            <h3 className='library-heading'>Duration</h3>
+            <p><h6 className='nursing-p'>4 Years (8 Semesters)</h6></p>
+            <h3 className='library-heading'>Eligibility Criteria</h3>
+            <p className='nursing-p'>
+            Intermediate in Agri. Science/PCB/PCM/PCMB. Minimum Aggregate Score Requirement: Gen/OBC/Minority-50 % and SC/ST- 45 %
+            </p>
+            <h3 className='library-heading'>Career Opportunities</h3>
+            <p className='nursing-p'>
+              • Agricultural Officer<br />
+              •	Farm Manager<br />
+              •	Crop Consultant<br />
+              •	Agricultural Researcher<br />
+              •	Extension Officer<br />
+              •	Agribusiness Manager<br />
+            </p>
+          </div>
+          <div className="col-md-5 image-column"><br />
             <img
-             style={{width:"520px",height:"440px",borderRadius:"8px"}}
-              src="/science7.jpeg"
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
+              src="/vision.png"
               alt="School Vision"
             />
           </div>
-          <div className="col-md-1"></div>
         </div>
-        <br></br><br></br>
-        
-        
+
       </div>
+      
       
     </div>
   );
