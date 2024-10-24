@@ -4,16 +4,6 @@ import React from 'react';
 import Nursingcourses from './Nursingcourses';
 const Nursingschool = () => {
   return <div>
-     {/* <div class="container-fluid nursingimage1  ">
- <div class="container">
-    <div class="row">
-       <div class="col-sm-12 mt-4 ">
-   <center> <h2 class="text-white  display-3 nursingsmt  " >School Of Nursing , Paramedical & Allied Science</h2></center>
-   
-  </div>
-      </div>
-    </div>
-</div> */}
 <h1 className="mt-4 fs-2 text-success fw-bold text-center">School Of Nursing , Paramedical & Allied Science</h1>
 
 <div className='container-fluid mt-5  '>

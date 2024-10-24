@@ -7,16 +7,6 @@ import Legalcourses from './Legalcourses';
 
 const Ballb = () => {
   return <div>
-     <div class="container-fluid ballb-image  ">
- <div class="container">
-    <div class="row">
-       <div class="col-sm-12 mt-4 ">
-   <center> <h2 class="text-white  display-3 artssmt  " >B.A in LLB</h2></center>
-   
-  </div>
-      </div>
-    </div>
-</div>
 <div className='container-fluid mt-5 nursingbg2 '>
   <div className='container p-5'>
     <div className='row'>
@@ -39,18 +29,18 @@ const Ballb = () => {
   </div>
 </div>
 <div className='container mt-5'>
-<h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
+<h1 className='library-heading'><span>B.A LLB - </span>	Course <span className='library-span'>Overview</span></h1>
             <div className="row" style={{
             border: "2px",
             borderRadius: "20px",
           }}>
             <div className="col-md-0"></div>
-            <div className="col-md-6"><br></br>
+            <div className="col-md-7"><br></br>
             <p className='nursing-p'>
             The B.A. LL.B program integrates undergraduate education in Arts (B.A.) and legal education (LL.B). It covers subjects such as Political Science, History, Economics, Sociology, along with foundational legal subjects like Constitutional Law, Legal Methods, Contracts, and Torts. The curriculum emphasizes both theoretical knowledge and practical skills through moot courts, internships, and legal clinics.
             </p>
             <h3 className='library-heading'>Duration</h3>
-            <p><h6 className='nursing-p'>5 Years (10 Semesters)</h6></p><br></br>
+            <p><h6 className='nursing-p'>5 Years (10 Semesters)</h6></p>
             <h3 className='library-heading'>Eligibility Criteria (Qualifying Exam)</h3>
             <p className='nursing-p'>
             Completion of higher secondary education (10+2) from a recognized board. Minimum Aggregate Score Requirement: Gen-45 % , OBC-42 % and SC/ST- 40 %.
@@ -63,9 +53,9 @@ Graduates can pursue careers as lawyers in law firms, corporate legal department
 
 </p>
         </div>
-        <div className="col-md-4 image-column mt-5"><br/>
+        <div className="col-md-5 image-column mt-5"><br/>
             <img
-              style={{ height: "100%" }}
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
               src="/vision.png"
               alt="School Vision"
             />

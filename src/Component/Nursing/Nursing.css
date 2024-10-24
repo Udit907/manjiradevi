@@ -19,8 +19,6 @@
     width: 100%;
     background-repeat: no-repeat;
   }
-  .library-heading{
-  }
   .bpharmaimage1 {
     background-image:linear-gradient(to left,rgba(60, 57, 55, 0.4),rgba(82, 79, 75, 0.4)), url("/public/bpharma.jpg");
     background-size: cover;
@@ -76,6 +74,9 @@ display: flex;
 gap: 10px;
 justify-content: center;
   
+}
+.card{
+  height: 310px;
 }
 .anm-h1{
   font-family: serif;
@@ -141,11 +142,10 @@ justify-content: center;
 
 }
 .cardh{
-
-	
-	font-weight: bold;
+	font-weight: 500;
 	font-family: serif;
   margin-left:15px;
+  font-size: 20px;
 
 }
 

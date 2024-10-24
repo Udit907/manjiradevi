@@ -153,7 +153,7 @@ function Nav() {
                             </div>
                             <span style={{fontSize:"13px"}}>School of Nursing Paramedical & Allied Science</span>
                             <div className="degree" style={{display:"grid"}}>
-                            <Link to="/" onClick={()=>setProgramDropDown(false)}>B.Pharma</Link>
+                            <Link to="/bpharma" onClick={()=>setProgramDropDown(false)}>B.Pharma</Link>
                             <Link to="/nursingbsc" onClick={()=>setProgramDropDown(false)}>B.Sc Nursing</Link>
                             <Link to="/nursingbpt" onClick={()=>setProgramDropDown(false)}>BPT</Link>
                             </div>

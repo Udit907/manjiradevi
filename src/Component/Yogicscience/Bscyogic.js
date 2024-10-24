@@ -35,19 +35,19 @@ const Bscyogic = () => {
   </div>
 </div>
 <div className='container mt-5'>
-<h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
+<h1 className='library-heading'><span>B.Sc (Yoga) - </span>	Course <span className='library-span'>Overview</span></h1>
             <div className="row" style={{
             border: "2px",
             borderRadius: "20px",
           }}>
             <div className="col-md-0"></div>
-            <div className="col-md-6"><br></br>
+            <div className="col-md-7"><br></br>
             <p className='nursing-p'>
             Undergraduate program that includes comprehensive study of yoga, anatomy, physiology, yoga therapy, and advanced yoga practices.
 
               </p>
             <h3 className='library-heading'>Duration</h3>
-            <p><h6 className='nursing-p'>3 Years (6 Semesters)</h6></p><br></br>
+            <p><h6 className='nursing-p'>3 Years (6 Semesters)</h6></p>
             <h3 className='library-heading'>Eligibility Criteria (Qualifying Exam)</h3>
             <p className='nursing-p'>
             Completion of 10+2 or equivalent from a recognized board.
@@ -63,9 +63,10 @@ const Bscyogic = () => {
 
 </p>
         </div>
-        <div className="col-md-4 image-column mt-5 mb-5"><br/>
+        <div className="col-md-5 image-column mt-5 mb-5"><br/>
             <img
-              style={{ height: "100%" }}
+                            style={{ width: "520px", height: "440px", borderRadius: "8px" }}
+
               src="/vision.png"
               alt="School Vision"
             />
@@ -74,7 +75,7 @@ const Bscyogic = () => {
 
 </div>
 <Yogiccourses/>
-<Library/>
+{/* <Library/> */}
 </div>
 
 }

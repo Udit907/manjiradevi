@@ -6,16 +6,6 @@ import Hotelcourses from './Hotelcourses';
 
 const Bachelorhm = () => {
   return <div>
-     <div class="container-fluid bachelorhm-image  ">
- <div class="container">
-    <div class="row">
-       <div class="col-sm-12 mt-4 ">
-   <center> <h2 class="text-white  display-3 artssmt  "  >Bachelor of Hotel Management and Catering Technology (BHMCT)</h2></center>
-   
-  </div>
-      </div>
-    </div>
-</div>
 <div className='container-fluid mt-5 nursingbg2 '>
   <div className='container p-5'>
     <div className='row'>
@@ -37,19 +27,19 @@ const Bachelorhm = () => {
   </div>
 </div>
 <div className='container mt-5'>
-<h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
+<h1 className='library-heading'><span>BHMCT - </span>	Course <span className='library-span'>Overview</span></h1>
             <div className="row" style={{
             border: "2px",
             borderRadius: "20px",
           }}>
             <div className="col-md-0"></div>
-            <div className="col-md-6"><br></br>
+            <div className="col-md-7"><br></br>
             <p className='nursing-p'>
             BHMCT is a comprehensive undergraduate program that covers various aspects of hotel management, hospitality operations, catering technology, and food service management.
 
               </p>
             <h3 className='library-heading'>Duration</h3>
-            <p><h6 className='nursing-p'>4 Years (8 Semester) </h6></p><br></br>
+            <p><h6 className='nursing-p'>4 Years (8 Semester) </h6></p>
             <h3 className='library-heading'>Eligibility Criteria (Qualifying Exam)</h3>
             <p className='nursing-p'>
             10+2 examination with English as one of the subjects at 10+2 level in any stream. Minimum 45% marks(40% in case of SC/ST category)
@@ -69,9 +59,9 @@ const Bachelorhm = () => {
 
 </p>
         </div>
-        <div className="col-md-4 image-column mt-5"><br/>
+        <div className="col-md-5 image-column mt-5"><br/>
             <img
-              style={{ height: "100%" }}
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
               src="/vision.png"
               alt="School Vision"
             />

@@ -5,7 +5,6 @@ import Artscourses from './Artscourses';
 const BaArts = () => {
   return (
     <div>
-      <h2 className='text-center mt-4 ' style={{fontSize:"45px",color:"orange"}}>Bachelor of Arts (B.A.)</h2>
       <div className="container-fluid mt-5 nursingbg2">
         <div className="container p-5">
           <div className="row">
@@ -23,35 +22,45 @@ const BaArts = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-5">
-      <h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
-        <div className="row" >
-          <div className="col-md-6"><br />
-            <p className="nursing-p">
+      <div className='container mt-5'>
+        <h1 className='library-heading'><span>BA - </span>	Course <span className='library-span'>Overview</span></h1>
+        <div className="row" style={{
+          border: "2px",
+          borderRadius: "20px",
+        }}>
+          <div className="col-md-0"></div>
+          <div className="col-md-7"><br></br>
+            <p className='nursing-p'>
             A 3-year undergraduate program offering a broad education in subjects like English, History, and Political Science, with options for electives and skill enhancement courses. Career opportunities include civil services, journalism, teaching, and public administration.
             </p>
-            <span className="nursing-span">Duration: </span>
-            <span>3 Years (6 Semesters)</span><br/>
-            <span className="nursing-span">Eligibility: </span>
-            Passed 10+2/Intermediate in any discipline <br />
-            <span className="nursing-span">Career Opportunities: </span>
-            <span className='history-span '>	•	Subjects:	</span>	  English, Hindi, Sanskrit, History, Political Science, Sociology, Education, Economics
-            <h3 className='library-heading'>	Career Opportunities</h3>
-<p className='nursing-p'>
-•	Journalist<br/>
-•	Content Writer<br/>
-•	Civil Servant<br/>
-•	Social Worker<br/>
-•	Policy Analyst<br/>
-
-
-</p>
-            
+            <h3 className='library-heading'>Duration</h3>
+            <p><h6 className='nursing-p'>3 Years (6 Semesters)</h6></p>
+            <h3 className='library-heading'>Eligibility Criteria</h3>
+            <p className='nursing-p'>
+            Passed 10+2/Intermediate in any discipline
+            </p>
+            <h3 className='library-heading'>Subjects</h3>
+            <p className='nursing-p'>
+            English, Hindi, Sanskrit, History, Political Science, Sociology, Education, Economics
+            </p>
+            <h3 className='library-heading'>Career Opportunities</h3>
+            <p className='nursing-p'>
+              • Journalist<br />
+              •	Content Writer<br />
+              •	Civil Servant<br />
+              •	Social Worker<br />
+              •	Policy Analyst<br />
+            </p>
           </div>
-          <div className="col-md-5  mt-5"><br />
-            <img style={{width:"520px",height:"440px",borderRadius:"8px"}}s src="/vision.png" alt="School Vision" />
+          <div className="col-md-5 image-column"><br />
+            <img
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
+              src="/vision.png"
+              alt="School Vision"
+            />
           </div>
         </div>
+
       </div>
       <Artscourses />
     </div>

@@ -6,18 +6,7 @@ import Library from "../Library/Library";
 function Msc() {
   return (
     <div className="School1-page">
-       <div class="container-fluid msc-image  ">
- <div class="container">
-    <div class="row">
-       <div class="col-sm-12 mt-4 ">
-   <center> <h2 class="text-white  display-3 nursingsmt " >  Master of Science - PCM/PCB/ZBC/CS</h2></center>
-   
-  </div>
-      </div>
-    </div>
-</div>
-    
-      <div className="container mt-3">
+      {/* <div className="container mt-3">
         <div
           className="row"
           style={{
@@ -60,8 +49,46 @@ function Msc() {
         <br></br><br></br>
         
        
-      </div>
+      </div> */}
       
+      <div className='container mt-5'>
+        <h1 className='library-heading'><span>M.Sc - </span>	Course <span className='library-span'>Overview</span></h1>
+        <div className="row" style={{
+          border: "2px",
+          borderRadius: "20px",
+        }}>
+          <div className="col-md-0"></div>
+          <div className="col-md-7"><br></br>
+            <p className='nursing-p'>
+            Advanced study in Physics, Chemistry, Mathematics, Biology, or Computer Science, depending on the chosen specialization. Emphasizes research, advanced theoretical concepts, and practical applications.
+            </p>
+            <h3 className='library-heading'>Duration</h3>
+            <p><h6 className='nursing-p'>2 Years (4 Semesters)</h6></p>
+            <h3 className='library-heading'>Eligibility Criteria</h3>
+            <p className='nursing-p'>
+            Bachelor’s degree in relevant discipline (e.g., B.Sc - PCM/PCB/ZBC/CS). 
+            </p>
+            <h3 className='library-heading'>Career Opportunities</h3>
+            <p className='nursing-p'>
+              • <b>PCM:</b>Research scientist, physicist, mathematician, data analyst, statistician.<br />
+              • <b>PCB:</b>Biotechnologist, microbiologist, biochemist, medical researcher, pharmacologist.<br />
+              • <b>ZBC:</b>Ecologist, wildlife biologist, botanist, environmental scientist, agricultural researcher.<br />
+              • <b>CS:</b>Data scientist, software engineer, cyber security analyst, AI specialist, IT project manager.<br />
+            </p>
+          </div>
+          <div className="col-md-5 image-column"><br />
+            <img
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
+              src="/vision.png"
+              alt="School Vision"
+            />
+          </div>
+        </div>
+
+      </div>
+
+
+
       <Library/>
     </div>
   );

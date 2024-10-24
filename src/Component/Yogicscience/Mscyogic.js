@@ -6,7 +6,7 @@ import Library from '../Library/Library';
 import Yogiccourses from './Yogiccourses';
 const Mscyogic = () => {
   return <div>
-     <div class="container-fluid mscyogic1image  ">
+     {/* <div class="container-fluid mscyogic1image  ">
  <div class="container">
     <div class="row">
        <div class="col-sm-12 mt-4 ">
@@ -15,7 +15,7 @@ const Mscyogic = () => {
   </div>
       </div>
     </div>
-</div>
+</div> */}
 <div className='container-fluid mt-5 nursingbg2 '>
   <div className='container p-5'>
     <div className='row'>
@@ -38,18 +38,18 @@ const Mscyogic = () => {
   </div>
 </div>
 <div className='container mt-5'>
-<h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
+<h1 className='library-heading'><span>M.Sc (Yoga) - </span>		Course <span className='library-span'>Overview</span></h1>
             <div className="row" style={{
             border: "2px",
             borderRadius: "20px",
           }}>
             <div className="col-md-0"></div>
-            <div className="col-md-6"><br></br>
+            <div className="col-md-7"><br></br>
             <p className='nursing-p'>
             Postgraduate program focused on the scientific and therapeutic aspects of yoga, including advanced yoga techniques, research methodology, and yoga therapy.
              </p>
             <h3 className='library-heading'>Duration</h3>
-            <p><h6 className='nursing-p'>2 years (4 Semesters)</h6></p><br></br>
+            <p><h6 className='nursing-p'>2 years (4 Semesters)</h6></p>
             <h3 className='library-heading'>Eligibility Criteria (Qualifying Exam)</h3>
             <p className='nursing-p'>
             Bachelor’s degree in Yoga (B.Sc Yoga) or a related field from a recognized university.
@@ -67,9 +67,9 @@ const Mscyogic = () => {
 
 </p>
         </div>
-        <div className="col-md-4 image-column"><br/>
+        <div className="col-md-5 image-column"><br/>
             <img
-              style={{ height: "75%" }}
+             style={{ width: "520px", height: "440px", borderRadius: "8px" }}
               src="/vision.png"
               alt="School Vision"
             />

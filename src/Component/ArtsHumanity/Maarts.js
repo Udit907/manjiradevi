@@ -6,7 +6,7 @@ import Artscourses from './Artscourses';
 
 const Maarts = () => {
   return <div>
-     <div class="container-fluid maartsimage  ">
+     {/* <div class="container-fluid maartsimage  ">
  <div class="container">
     <div class="row">
        <div class="col-sm-12 mt-4 ">
@@ -15,7 +15,7 @@ const Maarts = () => {
   </div>
       </div>
     </div>
-</div>
+</div> */}
 <div className='container-fluid mt-5 nursingbg2 '>
   <div className='container p-5'>
     <div className='row'>
@@ -38,19 +38,19 @@ const Maarts = () => {
   </div>
 </div>
 <div className='container mt-5'>
-<h1 className='library-heading'>	Course <span className='library-span'>Overview</span></h1>
+<h1 className='library-heading'><span>MA - </span>	Course <span className='library-span'>Overview</span></h1>
             <div className="row" style={{
             border: "2px",
             borderRadius: "20px",
           }}>
             <div className="col-md-0"></div>
-            <div className="col-md-6"><br></br>
+            <div className="col-md-7"><br></br>
             <p className='nursing-p'>
             A 2-year postgraduate program for advanced studies in humanities and social sciences, including research methodology and a dissertation. It prepares students for careers in academia, research, public policy, and cultural management.
 
             </p>
             <h3 className='library-heading'>Duration</h3>
-            <p><h6 className='nursing-p'>2 yrs. (4 Semesters)</h6></p><br></br>
+            <p><h6 className='nursing-p'>2 yrs. (4 Semesters)</h6></p>
             <h3 className='library-heading'>Eligibility Criteria (Qualifying Exam)</h3>
             <p className='nursing-p'>
             <span className='history-span '>	•	Educational Qualification:</span> Graduation in relevant discipline	</p> 
@@ -68,9 +68,9 @@ const Maarts = () => {
 </p>
       
         </div>
-        <div className="col-md-4 image-column"><br/>
+        <div className="col-md-5 image-column"><br/>
             <img
-              style={{ height: "75%" }}
+              style={{ width: "520px", height: "440px", borderRadius: "8px" }}
               src="/vision.png"
               alt="School Vision"
             />
