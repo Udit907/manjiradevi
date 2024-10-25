@@ -50,9 +50,9 @@ const Footer = () => {
                     <h2>EXPLORE</h2>
                     <br/>
                     <Link to="/about">About Us</Link>
-                    <Link to="#">Placements</Link>
+                    <Link to="/placement">Placements</Link>
                     <Link to="#">Alumni</Link>
-                    <Link to="#">Research</Link>
+                    <Link to="/gallery1">Research</Link>
                     <Link to="#">Leadership</Link>
                     <Link to="#">Campus Life</Link>
                     <Link to="#">Privacy Policy</Link>
