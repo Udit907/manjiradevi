@@ -200,8 +200,6 @@ function School1() {
           </div>
         </div>
       </div>
-
-      <Library />
     </div>
   );
 }
