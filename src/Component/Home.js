@@ -10,29 +10,30 @@ import StudentLife from "./Studentlife/Studentlife";
 import Gallery from "./Gallery/Gallery";
 import Accreditations from "./Accreditations/Accreditations";
 import Schoolhighlight from "./Schoolhighlight/Schoolhighlight";
-import homeimg from "../images/123.jpeg"
-import homeimg1 from "../images/124.jpeg"
-import homeimg2 from "../images/125.jpg"
+import homeimg from "../images/photo.jpeg"
+import homeimg1 from "../images/photo8.jpeg"
+import homeimg2 from "../images/123.jpeg"
 
 
 function Home() {
   return (
     <div>
+     
       <div
         id="carouselExampleInterval"
-        className="carousel slide"
+        className="carousel  slide"
         data-bs-ride="carousel"
 
       >
         <div className="carousel-inner">
           <div className="carousel-item active" >
-            <img src={homeimg} className="d-block w-100" alt="..." data-bs-interval="3000" />
+            <img src={homeimg2} className="d-block w-100" alt="..." data-bs-interval="3000" />
           </div>
           <div className="carousel-item">
             <img src={homeimg1} className="d-block w-100" alt="..." data-bs-interval="1000" />
           </div>
           <div className="carousel-item">
-            <img src={homeimg2} className="d-block w-100" alt="..." />
+            <img src={homeimg} className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
@@ -54,6 +55,7 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+     
       <div className="bgMarquee" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '7vh' }}>
         <div style={{ width: '90%', margin: "0 auto", overflow: "hidden", textAlign: "center" }}>
           <div className="scroll-text" style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
